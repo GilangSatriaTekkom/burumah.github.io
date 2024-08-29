@@ -1,16 +1,20 @@
 // font style component
+html {
+    font-size: 16px;
+}
+
 body,h1,h2,h3,h4,h5,p,a,label,button,span{
-    @apply font-sans
+    @apply font-satoshi
 }
 .text-default{
     @apply text-gray-500
 }
 h1 {
-    @apply text-4xl;
+    @apply text-8xl;
 }
 
 h2 {
-    @apply text-3xl;
+    @apply text-5xl;
 }
 
 h3 {
@@ -36,4 +40,3 @@ p {
 a {
     @apply text-blue-500 hover:text-blue-700;
 }
-

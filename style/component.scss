@@ -13,3 +13,33 @@
         @apply bg-emerald-300
 }
 
+.border__primary{
+        @apply border-[#D6D6D6]
+    }
+.border__secondary{
+        @apply border-emerald-300
+}
+
+li.active{
+    @apply bg-emerald-300 font-bold
+}
+
+li:hover {
+    @apply font-bold
+}
+
+.btn__arrow{
+    @apply h-[46px] w-[46px]
+}
+
+.slider-1 {
+    @apply w-full flex justify-around items-center animate-marquee whitespace-nowrap
+}
+
+.slider-2 {
+    @apply w-full flex justify-around items-center animate-marquee2 whitespace-nowrap absolute
+}
+
+.slider-content {
+    @apply h-12 w-auto
+}
