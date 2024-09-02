@@ -10,15 +10,15 @@ body,h1,h2,h3,h4,h5,p,a,label,button,span{
     @apply text-gray-500
 }
 h1 {
-    @apply text-8xl;
+    @apply text-7xl;
 }
 
 h2 {
-    @apply text-5xl;
+    @apply text-6xl;
 }
 
 h3 {
-    @apply text-2xl;
+    @apply text-5xl;
 }
 
 h4 {
@@ -34,9 +34,19 @@ h6 {
 }
 
 p {
-    @apply text-gray-700 leading-relaxed;
+    @apply text-gray-700 leading-relaxed text-xl;
 }
 
 a {
-    @apply text-blue-500 hover:text-blue-700;
+    @apply text-gray-700 hover:text-gray-900;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    /* Untuk layar dengan lebar maksimum 768px (umumnya tablet dan ponsel) */
+    html {
+        font-size: 10px; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+    h1 {
+        @apply text-5xl
+    }
 }

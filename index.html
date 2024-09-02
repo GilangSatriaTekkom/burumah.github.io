@@ -10,20 +10,15 @@
 
 <body>
   <main id="app">
-    
-    <header class="container relative pb-8">
-      <div class="container absolute right-0 flex w-auto top-1/2 flex-col gap-3">
-        <a href=""><img src="./svg/socmed/icon_twitter.svg" alt=""></a>
-        <a href=""><img src="./svg/socmed/icon_instagram.svg" alt=""></a>
-        <a href=""><img src="./svg/socmed/icon_whatsapp.svg" alt=""></a>
-        <a href=""><img src="./svg/socmed/icon_linkedin.svg" alt=""></a>
-      </div>
-      <nav class="flex flex-row items-center justify-between py-3">
+    <!-- ________HEADER__________ -->
+    <header class="container pb-8">
+      <nav
+        class="w-full desktop:container mobile:container desktop:left-0 flex flex-row items-center justify-between py-3 z-50 fixed">
         <div class="flex flex-row space-x-1">
-          <img src="/svg/logo_burumah.svg" alt="">
+          <img src="/svg/burumah_logo.svg" alt="">
           <span class="font-bold">Burumah</span>
         </div>
-        <ul id="navActive" class="flex flex-row gap border border__primary rounded-full p-2">
+        <ul id="navActive" class="mobile:hidden flex flex-row gap border border__primary rounded-full p-2 bg-white">
           <li class="text-base rounded-full py-2 px-5 active">Home</li>
           <li class="text-base rounded-full py-2 px-5">About Us</li>
           <li class="text-base rounded-full py-2 px-5">Property</li>
@@ -32,25 +27,32 @@
         </ul>
         <div class="flex flex-row">
           <button class="bg__secondary rounded-full py-3 px-5">Registration Now</button>
-          <button class="border border__secondary flex place-content-center items-center btn__arrow rounded-full">
+          <button
+            class="border border__secondary flex place-content-center items-center btn__arrow rounded-full bg-white">
             <img class="w-3 h-3 " src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
           </button>
         </div>
       </nav>
 
-      <div class="flex flex-row left-32">
-        <p>Smartproperty <br>
+      <div class="h-32"></div>
+      <div class="flex desktop:flex-row mobile:flex-col mobile:text-center mobile:gap-4 left-32 w-full desktop:gap-12">
+        <h6>Smartproperty <br class="mobile:hidden">
           Invesment
-        </p>
-        <div class="flex flex-col gap-4 w-3/4">
-          <h1>BEST PROPERTY <br>
-            FOR FAMILY <span><img class="rounded-full" src="./public/img/title-pict.png" alt=""></span></h1>
-          <p>Are you looking for property and real estate that is responsible, very reliable and has a modern house
+        </h6>
+        <div class="flex flex-col gap-6 desktop:w-3/4 mobile:items-center">
+          <h1 class="mobile:text-6xl">BEST PROPERTY</h1>
+          <div class="flex flex-row gap-2 items-center mobile:items-center mobile:justify-center">
+            <h1 class="mobile:text-6xl">FOR FAMILY</h1>
+            <img class="rounded-full w-auto desktop:h-24 mobile:h-14" src="./public/img/title-pict.png" alt="Title Picture">
+          </div>
+          <p class="mobile:text-justify">Are you looking for property and real estate that is responsible, very reliable and has a modern house
             style,
             you have come to the right person, look for your dream house and order it from us
             without difficulty in transactions</p>
           <div class="flex flex-row">
-            <button class="border border__secondary rounded-full py-3 px-5">Get Started Now</button>
+            <button aria-label="Button For Access Registration Page" 
+            class="border border__secondary rounded-full">Get Started Now</button>
+            
             <button class="bg__secondary rounded-full flex place-content-center items-center btn__arrow">
               <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
             </button>
@@ -58,20 +60,460 @@
         </div>
       </div>
 
-      <div class="flex flex-row justify-between items-center">
-        <div class="flex w-auto h-auto flex-row gap-3">
-          <img src="./public/img/profile_group.png" alt="">
+      <div class="flex desktop:flex-row mobile:flex-col mobile:mt-20 mobile:gap-5 justify-between items-center">
+        <div class="flex w-auto h-auto flex-row gap-3 ">
+          <img class="mobile:h-10 mobile:w-auto" src="./public/img/profile_group.png" alt="">
           <div class="flex flex-row gap-1 items-center">
-            <i><img src="./svg/icon_star.svg" alt=""></i>
+            <i><img class=" mobile:w-5 mobile:h-5" src="./svg/icon_star.svg" alt=""></i>
             <p>(4.5 Star)</p>
           </div>
         </div>
-        <img class="w-auto h-auto" src="./public/img/btn-group.png" alt="Hero Image">
+        <img class="desktop:w-auto desktop:h-auto mobile:w-52 mobile:self-end" src="./public/img/btn-group.png" alt="Hero Image">
       </div>
+
+      <aside class="mobile:hidden flex justify-end items-end desktop:container mobile:container absolute right-0 top-1/3 flex-col gap-3">
+        <a href=""><img src="./svg/socmed/icon_twitter.svg" alt=""></a>
+        <a href=""><img src="./svg/socmed/icon_instagram.svg" alt=""></a>
+        <a href=""><img src="./svg/socmed/icon_whatsapp.svg" alt=""></a>
+        <a href=""><img src="./svg/socmed/icon_linkedin.svg" alt=""></a>
+      </aside>
     </header>
+    <!-- ________HEADER END__________ -->
 
     <!-- ________SLIDER__________ -->
-    <section class=" bg-black relative">
+    <section class=" bg-black relative overflow-x-hidden">
+      <div class="slider-1 flex flex-row items-center gap-8 py-6 text-white whitespace-nowrap">
+        <h2>PROPERTY</h2>
+        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
+        <h2>BUYUMAH</h2>
+        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
+        <h2>BEST</h2>
+        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
+        <h2>FAMILY</h2>
+      </div>
+
+      <div class="slider-2 top-0 flex flex-row items-center gap-8 py-6 text-white whitespace-nowrap">
+        <h2>PROPERTY</h2>
+        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
+        <h2>BUYUMAH</h2>
+        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
+        <h2>BEST</h2>
+        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
+        <h2>FAMILY</h2>
+      </div>
+    </section>
+    <!-- ________SLIDER END__________ -->
+
+    <!-- ________ABOUT US__________ -->
+    <section class="desktop:container mobile:container pt-32">
+      <article>
+        <h3>Welcome to burumah</h3>
+        <div class="flex mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-12">
+          <img class="desktop:float-left mobile:w-96" src="./public/img/house1.png" alt="">
+          <p class="mobile:text-justify desktop:hidden ">Burumah is a property and real estate agent that provides satisfaction to clients who come from anywhere,
+            and helps you get the property and real estate of your dreams</p>
+          <div class="flex flex-col gap-10 desktop:pt-10 desktop:pl-10">
+            <p class="mobile:hidden">Burumah is a property and real estate agent that provides satisfaction to clients who come from anywhere,
+              and helps you get the property and real estate of your dreams</p>
+            <div class="flex flex-row items-end gap-6">
+              <div class="w-auto h-12 flex items-center"><img src="./img/companyLogo/century_logo.png" alt="Century Logo"> </div>
+              <div class="w-auto h-12 flex items-center"><img src="./img/companyLogo/household_logo.png" alt="Household Logo"></div>
+              <div class="w-auto h-12 flex items-center"><img src="./img/companyLogo/greenhouse_logo.png" alt="Green House Logo"></div>
+              <div class="w-auto h-12 flex items-center"><img src="./img/companyLogo/paypal_logo.png" alt="Paypal Logo"> </div>
+              <div class="w-auto h-12 flex items-center"><img src="./img/companyLogo/propertyroom_logo.png" alt="Property Room Logo"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="pt-32">
+          <div class="flex desktop:flex-row mobile:flex-col mobile:justify-center gap-5 desktop:justify-between">
+            <h6 class="flex desktop:items-start mobile:justify-center">Who we are</h6>
+            <h2 class="mobile:text-5xl mobile:text-center">BEST AGENCY<br>
+              PROPERTY HOUSE</h2>
+            <h6 class="flex desktop:items-end desktop:w-60 mobile:text-center">Trusted property and housing agent who often helps clients to get
+              their dream home without any guarantees</h6>
+          </div>
+        </div>
+
+        <div class="pt-10">
+          <div class="flex justify-end p-6 desktop:bg-officeBg bg-cover rounded-32xl">
+            <div class="flex flex-col items-end w-96 glass p-8">
+              <div class="flex flex-col gap-4 mb-11 w-full">
+                <h4 class="left-0 text-[2rem]"><b>Our Team</b></h4>
+                <div class="flex flex-row gap-3">
+                  <figure><img class="rounded-full" src="./public/img/malePict1.png" alt="Team Member"></figure>
+                  <div class="flex flex-col gap-1">
+                    <h5>
+                      <b>Nugaraha</b>
+                    </h5>
+                    <h6>Owner</h6>
+                  </div>
+                </div>
+                <div class="flex flex-row gap-3">
+                  <figure><img class="rounded-full" src="./public/img/malePict2.png" alt="Team Member"></figure>
+                  <div class="flex flex-col gap-1">
+                    <h5>
+                      <b>Rizwan Gustama</b>
+                    </h5>
+                    <h6>Marketing Branding</h6>
+                  </div>
+                </div>
+                <div class="flex flex-row gap-3">
+                  <figure><img class="rounded-full" src="./public/img/malePict3.png" alt="Team Member"></figure>
+                  <div class="flex flex-col gap-1">
+                    <h5>
+                      <b>Purwa Adi</b>
+                    </h5>
+                    <h6>Designer Property</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-row w-full">
+                <button class="bg__secondary rounded-full py-3 px- w-full" aria-label="Button For Access Registration Page">Registration Now</button>
+                <button class="border border__secondary flex place-content-center items-center btn__arrow rounded-full">
+                  <img class="w-3 h-3 " src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+                </button>
+              </div>
+              <div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+    <!-- ________ABOUT US END__________ -->
+
+
+    <!-- ________LATES PROPERTY__________ -->
+    <section class="desktop:container mobile:container pt-32 flex flex-col gap-10 white">
+      <article class="flex flex-col gap-10">
+        <div class="flex desktop:flex-row mobile:flex-col mobile:items-center mobile:text-center mobile:gap-12 desktop:justify-between desktop:gap-64">
+          <div class="flex flex-col gap-5">
+            <h3>Lates Property</h3>
+            <p>We have completed several housing, villa and property orders with our professional team, at costs that
+              suit you</p>
+          </div>
+
+          <div class="flex items-end">
+            <div class="flex items-center gap-4 relative">
+              <button aria-label="Button for swipe to previous Lates Property card" 
+                class="swiper-button-prev-costum flex items-center justify-center border rounded-full desktop:w-24 desktop:h-14 mobile:w-14 mobile:h-8 ">
+                <img class="w-5 h-5" src="/svg/arrow-left.svg" alt="Arrow left">
+              </button>
+              <p>01/03</p>
+              <button aria-label="Button for swipe to next Lates Property card"
+                class="swiper-button-next-costum flex items-center justify-center border rounded-full  desktop:w-24 desktop:h-14 mobile:w-14 mobile:h-8 ">
+                <img class="w-5 h-5" src="/svg/arrow-right.svg" alt="Arrow right">
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <swiper-container class="swiper-container">
+        <swiper-slide class="flex flex-col desktop:w-1/3  gap-6 swiper-slide">
+          <figure class="relative w-full bg-black h-96 rounded-32xl">
+            <div class="flex justify-end">
+              <div class="absolute right-0 z-10">
+                <img class="flex items-end w-16 h-16" src="/svg/corner.svg" alt="">
+              </div>
+
+              <button class="z-20 bg__secondary rounded-full flex place-content-center items-center btn__arrow end-1">
+                <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+              </button>
+            </div>
+          </figure>
+
+          <div>
+            <div class="flex flex-col gap-3">
+              <h4><b>Sekarwangi Village</b></h4>
+              <h6>2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
+            </div>
+            <div class="flex flex-row gap-1 mt-4 items-end">
+              <h4><b>$943.65</b></h4>
+              <h6><del>$999.000</del></h6>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="flex flex-col desktop:w-1/3  gap-6 swiper-slide">
+          <figure class="relative w-full bg-black h-96 rounded-32xl">
+            <div class="flex justify-end">
+              <div class="absolute right-0 z-10">
+                <img class="flex items-end w-16 h-16" src="/svg/corner.svg" alt="">
+              </div>
+
+              <button class="z-20 bg__secondary rounded-full flex place-content-center items-center btn__arrow end-1">
+                <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+              </button>
+            </div>
+          </figure>
+
+          <div>
+            <div class="flex flex-col gap-3">
+              <h4><b>Leuwigoong house sevilage</b></h4>
+              <h6>2118 Thornridge Cir. Syracuse, Connecticut 35624</h6>
+            </div>
+            <div class="flex flex-row gap-1 mt-4 items-end">
+              <h4><b>$576.28</b></h4>
+              <h6><del>$599.000</del></h6>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="flex flex-col desktop:w-1/3  gap-6 swiper-slide">
+          <figure class="relative w-full bg-black h-96 rounded-32xl">
+            <div class="flex justify-end">
+              <div class="absolute right-0 z-10">
+                <img class="flex items-end w-16 h-16" src="/svg/corner.svg" alt="">
+              </div>
+
+              <button class="z-20 bg__secondary rounded-full flex place-content-center items-center btn__arrow end-1">
+                <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+              </button>
+            </div>
+          </figure>
+
+          <div>
+            <div class="flex flex-col gap-3">
+              <h4><b>Leuwipeti village</b></h4>
+              <h6>3517 W. Gray St. Utica, Pennsylvania 57867</h6>
+            </div>
+            <div class="flex flex-row gap-1 mt-4 items-end">
+              <h4><b>$748.55</b></h4>
+              <h6><del>$799.000</del></h6>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="flex flex-col desktop:w-1/3  gap-6 swiper-slide">
+          <figure class="relative w-full bg-black h-96 rounded-32xl">
+            <div class="flex justify-end">
+              <div class="absolute right-0 z-10">
+                <img class="flex items-end w-16 h-16" src="/svg/corner.svg" alt="">
+              </div>
+
+              <button class="z-20 bg__secondary rounded-full flex place-content-center items-center btn__arrow end-1">
+                <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+              </button>
+            </div>
+          </figure>
+
+          <div>
+            <div class="flex flex-col gap-3">
+              <h4><b>Leuwipeti village</b></h4>
+              <h6>3517 W. Gray St. Utica, Pennsylvania 57867</h6>
+            </div>
+            <div class="flex flex-row gap-1 mt-4 items-end">
+              <h4><b>$748.55</b></h4>
+              <h6><del>$799.000</del></h6>
+            </div>
+          </div>
+        </swiper-slide>
+
+      </swiper-container>
+
+     
+
+    </section>
+
+
+    <!-- ________LATES PROPERTY END__________ -->
+
+    <!-- ________PROPERTY CATEGORY__________ -->
+    <section class="desktop:container mobile:container pt-32 flex flex-col gap-10">
+      <div class="flex desktop:flex-row desktop:gap-36 mobile:flex-col mobile:gap-12 mobile:text-center mobile:items-center">
+        <div class="flex flex-col">
+          <h3>Property Category</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus illo facilis officia ratione accusamus
+            quaerat,
+            est quibusdam voluptas iste accusantium iure libero ad deserunt perferendis a laudantium! Culpa, repellendus
+            quis!</p>
+
+        </div>
+
+        <div class="flex desktop:justify-end desktop:items-end">
+          <ul id="navActive" class="flex flex-row border border__primary rounded-full p-2 w-full">
+            <li class="text-base rounded-full py-2 px-5 active">Home</li>
+            <li class="text-base rounded-full py-2 px-5">Real estate</li>
+            <li class="text-base rounded-full py-2 px-5">Apartment</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="flex flex-row gap-6">
+        <div class="flex flex-col w-2/3 gap-6">
+          <figure class="relative w-full bg-black h-96 rounded-32xl">
+            <div class="flex justify-end">
+              <div class="absolute right-0 z-10">
+                <img class="flex items-end w-16 h-16" src="/svg/corner.svg" alt="">
+              </div>
+
+              <button class="z-20 bg__secondary rounded-full flex place-content-center items-center btn__arrow end-1">
+                <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+              </button>
+            </div>
+          </figure>
+
+          <div>
+            <div class="flex flex-col gap-3">
+              <h4><b>Sekarwangi Village</b></h4>
+              <h6>2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
+            </div>
+            <div class="flex flex-row gap-1 mt-4 items-end">
+              <h4><b>$943.65</b></h4>
+              <h6><del>$999.000</del></h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-1/3 gap-6">
+          <figure class="relative w-full bg-black h-96 rounded-32xl">
+            <div class="flex justify-end">
+              <div class="absolute right-0 z-10">
+                <img class="flex items-end w-16 h-16" src="/svg/corner.svg" alt="">
+              </div>
+
+              <button class="z-20 bg__secondary rounded-full flex place-content-center items-center btn__arrow end-1">
+                <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+              </button>
+            </div>
+          </figure>
+
+          <div>
+            <div class="flex flex-col gap-3">
+              <h4><b>Sekarwangi Village</b></h4>
+              <h6>2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
+            </div>
+            <div class="flex flex-row gap-1 mt-4 items-end">
+              <h4><b>$943.65</b></h4>
+              <h6><del>$999.000</del></h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex flex-row gap-6">
+        <div class="flex flex-col w-1/3 gap-6">
+          <figure class="relative w-full bg-black h-96 rounded-32xl">
+            <div class="flex justify-end">
+              <div class="absolute right-0 z-10">
+                <img class="flex items-end w-16 h-16" src="/svg/corner.svg" alt="">
+              </div>
+
+              <button class="z-20 bg__secondary rounded-full flex place-content-center items-center btn__arrow end-1">
+                <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+              </button>
+            </div>
+          </figure>
+
+          <div>
+            <div class="flex flex-col gap-3">
+              <h4><b>Sekarwangi Village</b></h4>
+              <h6>2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
+            </div>
+            <div class="flex flex-row gap-1 mt-4 items-end">
+              <h4><b>$943.65</b></h4>
+              <h6><del>$999.000</del></h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-2/3 gap-6">
+          <figure class="relative w-full bg-black h-96 rounded-32xl">
+            <div class="flex justify-end">
+              <div class="absolute right-0 z-10">
+                <img class="flex items-end w-16 h-16" src="/svg/corner.svg" alt="">
+              </div>
+
+              <button class="z-20 bg__secondary rounded-full flex place-content-center items-center btn__arrow end-1">
+                <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+              </button>
+            </div>
+          </figure>
+
+          <div>
+            <div class="flex flex-col gap-3">
+              <h4><b>Sekarwangi Village</b></h4>
+              <h6>2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
+            </div>
+            <div class="flex flex-row gap-1 mt-4 items-end">
+              <h4><b>$943.65</b></h4>
+              <h6><del>$999.000</del></h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- ________PROPERTY CATEGORY END__________ -->
+
+    <!-- ________TESTIMONIAL__________ -->
+    <section class="desktop:container mobile:container pt-32 flex flex-col gap-10">
+      <div class="flex desktop:flex-row mobile:flex-col mobile:text-center gap-6">
+        <h6 class="mobile:hidden">Testimonial</h6>
+        <div>
+          <div class="flex flex-row desktop:justify-between">
+            <i><img class="mobile:w-14" src="./public/svg/quote.svg" alt="Quote icon for testimonial"></i>
+            <i><img class="mobile:w-44" src="./public/img/companyLogo/greenhouse_logo.png" alt="Greenhouse logo for testimonial"></i>
+          </div>
+          <h3 class="my-6"><i>We believe in Burumah, because it gives us satisfaction for very satisfying results</i>
+          </h3>
+          <i class="flex justify-end"><img class="mobile:w-14" src="./public/svg/quote.svg" alt="Quote icon for testimonial"></i>
+        </div>
+      </div>
+
+
+      <div class="flex flex-row justify-between">
+
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-row gap-3">
+            <figure><img class="rounded-full" src="./public/img/malePict1.png" alt="Team Member"></figure>
+            <div class="flex flex-col gap-1">
+              <h5>
+                <b>Samsul Arifin</b>
+              </h5>
+              <h6>Client</h6>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2">
+            <i><img src="./svg/icon_star.svg" alt=""></i>
+            <i><img src="./svg/icon_star.svg" alt=""></i>
+            <i><img src="./svg/icon_star.svg" alt=""></i>
+            <i><img src="./svg/icon_star.svg" alt=""></i>
+            <i><img src="./svg/icon_star.svg" alt=""></i>
+          </div>
+        </div>
+
+
+        <div class="flex items-start">
+          <div class="flex items-center gap-4">
+            <button class="flex items-center justify-center border rounded-full desktop:w-24 desktop:h-14 mobile:w-14 mobile:h-8 ">
+              <img class="w-5 h-5" src="/svg/arrow-left.svg" alt="Arrow left">
+            </button>
+            <p>01/03</p>
+            <button class="flex items-center justify-center border rounded-full  desktop:w-24 desktop:h-14 mobile:w-14 mobile:h-8 ">
+              <img class="w-5 h-5" src="/svg/arrow-right.svg" alt="Arrow right">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ________TESTIMONIAL END__________ -->
+
+    <!-- ________SLIDER FOOTER__________ -->
+    <section class=" bg-black relative overflow-x-hidden mt-24">
       <div class="slider-1 flex flex-row items-center gap-8 py-6 text-white whitespace-nowrap">
         <h2>PROPERTY</h2>
         <i><img src="./svg/burumah_huge_logo.svg" alt=""></i>
@@ -82,7 +524,7 @@
         <h2>FAMILY</h2>
       </div>
 
-      <div class="slider-2 top-0 flex flex-row items-center gap-8 py-6 text-white">
+      <div class="slider-2 top-0 flex flex-row items-center gap-8 py-6 text-white whitespace-nowrap">
         <h2>PROPERTY</h2>
         <i><img src="./svg/burumah_huge_logo.svg" alt=""></i>
         <h2>BUYUMAH</h2>
@@ -92,19 +534,67 @@
         <h2>FAMILY</h2>
       </div>
     </section>
-    <!-- ________SLIDER END__________ -->
+    <!-- ________SLIDER FOOTER END__________ -->
 
-    <section class="bg__secondary container w-screen h-screen flex flex-col gap-3 justify-center items-center">
-      <h1 class="text-white font-bold">Hello world!</h1>
-      <a href="https://mangcoding.com" target="_blank" class="btn btn__primary">Click Me</a>
-    </section>
-    <footer class="">
-      <ul class="container">
-        <li><a href=""></a></li>
-      </ul>
+    <!-- ________FOOTER__________ -->
+    <footer class="container py-20 ">
+      <div class="flex gap-14 desktop:flex-row tablet:flex-row mobile:flex-col justify-between mobile:space-y-10">
+        <div class="desktop:w-1/2 flex flex-col gap-6">
+          <div class="flex flex-row logo_burumah">
+            <img class="w-20" src="/svg/burumah_logo.svg" alt="">
+            <span class="font-bold text-42xl">Burumah</span>
+          </div>
+          <p>
+            Burumah is a property and real estate agent that provides satisfaction
+            to clients who come from anywhere, and helps you get the property and
+            real estate of your dreams
+          </p>
+        </div>
+
+        <div class="desktop:w-1/4 flex-col ">
+          <h4><b>Company</b></h4>
+          <ul class="flex flex-col mt-6 space-y-3">
+            <li><a href="">How it work</a></li>
+            <li><a href="">For team</a></li>
+            <li><a href="">Category</a></li>
+          </ul>
+        </div>
+        <div class="desktop:w-1/4 flex-col">
+          <h4><b>Category</b></h4>
+          <ul class="flex flex-col mt-6 space-y-3">
+            <li><a href="">House Property</a></li>
+            <li><a href="">Real Estate</a></li>
+            <li><a href="">Apartment</a></li>
+          </ul>
+        </div>
+
+        <div class="desktop:w-1/2 flex flex-col gap-6 mobile:text-center">
+          <h4><b>Subscribe to Follow</b></h4>
+          <div>
+            <input type="email" placeholder="Your Email....">
+            <button aria-label="Button for subscribe to channel" class="bg__secondary rounded-full py-3 px-5">Subscribe</button>
+          </div>
+          <div class="flex flex-row mobile:items-center mobile:justify-around">
+            <a href=""><img src="./svg/socmed/icon_twitter.svg" alt=""></a>
+            <a href=""><img src="./svg/socmed/icon_instagram.svg" alt=""></a>
+            <a href=""><img src="./svg/socmed/icon_whatsapp.svg" alt=""></a>
+            <a href=""><img src="./svg/socmed/icon_linkedin.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="flex mt-8 desktop:flex-row tablet:flex-row mobile:flex-col justify-between mobile:space-y-6 mobile:items-center">
+        <h4 class="font-helvetica mobile:text-[16px]">© 2024 mangcoding. All rights reserved.</h4>
+      </div>
     </footer>
+    <!-- ________FOOTER END__________ -->
+    
   </main>
+
+
   <script type="module" src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  
 </body>
 
 </html>

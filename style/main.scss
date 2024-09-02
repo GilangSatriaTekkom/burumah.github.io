@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+button {
+    @apply desktop:py-3 desktop:px-5 mobile:py-1 mobile:px-3   
+    }
+
+    
+}
 
 @layer utilities{
  
