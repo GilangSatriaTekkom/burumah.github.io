@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-button {
-    @apply desktop:py-3 desktop:px-5 mobile:py-1 mobile:px-3   
-    }
+.button__wide {
+    @apply desktop:py-1 desktop:px-5 mobile:py-1 mobile:px-6 tablet:px-6 tablet:py-1
+    } 
+}
 
-    
+.card-button__circle {
+    @apply mobile:h-6 mobile:w-6 tablet:h-1 tablet:w-1
 }
 
 @layer utilities{

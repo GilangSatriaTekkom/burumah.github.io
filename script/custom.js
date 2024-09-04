@@ -1,29 +1,16 @@
 console.log('testing js')
 
-// import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle';
+let navigation = document.getElementById('nav');
 
-// import styles bundle
-import 'swiper/css/bundle';
-
-const swiper = new Swiper('swiper-container', {
-  direction: 'horizontal',
-  loop: true,
-  spaceBetween: 30,
-  slidesPerView: 3,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next-costum',
-    prevEl: '.swiper-button-prev-costum',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+        navigation.classList.add('shadow-lg');
+        navigation.classList.add('bg-white');
+    } else {
+        navigation.classList.remove('shadow-lg');
+        navigation.classList.remove('bg-white');
+    }
+})
 
 // Add active class to the current button (highlight it)
 document.addEventListener('DOMContentLoaded', function() {
@@ -40,5 +27,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+const carouselItems = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
 
+    function showSlide(index) {
+        carouselItems.forEach((item, i) => {
+            if (i === index) {
+                item.classList.add('opacity-100');
+                item.classList.remove('opacity-0');
+            } else {
+                item.classList.add('opacity-0');
+                item.classList.remove('opacity-100');
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex === carouselItems.length - 1) ? 0 : currentIndex + 1;
+        showSlide(currentIndex);
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        currentIndex = (currentIndex === 0) ? carouselItems.length - 1 : currentIndex - 1;
+        showSlide(currentIndex);
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        currentIndex = (currentIndex === carouselItems.length - 1) ? 0 : currentIndex + 1;
+        showSlide(currentIndex);
+    });
+
+    setInterval(nextSlide, 3000);
+
+    showSlide(currentIndex);
 

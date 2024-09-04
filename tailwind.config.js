@@ -6,17 +6,16 @@ export default {
   ],
   theme: {
     screens: {
-      'mobile': {'min': '375px', 'max': '475px'},
-      'tablet': {'max': '1024px', 'min': '476px'},
+      'mobile': {'min': '320px', 'max': '767px'},
+      'tablet': {'max': '1023px', 'min': '768px'},
       'desktop': {'max': '1440px', 'min': '1024px'},
     },
     container: {
       center: true,  // Center container by default
       padding: {
         mobile: '1.5rem',  // Padding for small screens
-        md: '2rem',    // Padding for medium screens
-        tablet: '2.5rem',  // Padding for large screens
-        xl: '10rem',    // Padding for extra large screens
+        tablet: '5rem',  // Padding for large screens
+        desktop: '1rem', // Padding for extra large screens
       },
     },
 
@@ -60,6 +59,13 @@ export default {
       'titlePict': 'url(/img/title-pict.png)',
 
     },
+
+    animation: {
+      marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
+        marqueeLeftToRight: 'marqueeLeftToRight 25s linear infinite', // {{ edit_1 }}
+        marqueeLeftToRight2: 'marqueeLeftToRight2 25s linear infinite',
+    }
   },
   plugins: [],
 }

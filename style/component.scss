@@ -29,7 +29,7 @@ li:hover {
 }
 
 .btn__arrow{
-    @apply h-[46px] w-[46px]
+    @apply desktop:h-14 desktop:w-14 tablet:h-16 tablet:w-16 mobile:h-16 mobile:w-16
 }
 
 .slider-1 {
@@ -58,14 +58,19 @@ li:hover {
     width: 100%;
     height: 100%;
 
-    .swiper-button-prev-costum {
-        background-image: url(../dist/svg/arrow-left.svg);
-      }
-    .swiper-button-next-costum {
     
-        background-image: url(../dist/svg/arrow-right.svg);
-    }
   }
 
- 
+  .swiper-button-prev-costum {
+    background-image: url(../dist/svg/arrow-left.svg);
+  }
+.swiper-button-next-costum {
+
+    background-image: url(../dist/svg/arrow-right.svg);
+}
+
+.swiper-slide {
+    text-align: center;
+    width: auto;
+  }
  
