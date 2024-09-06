@@ -6,16 +6,20 @@ export default {
   ],
   theme: {
     screens: {
-      'mobile': {'min': '320px', 'max': '767px'},
-      'tablet': {'max': '1023px', 'min': '768px'},
-      'desktop': {'max': '1440px', 'min': '1024px'},
+      'sm': '375px',    // Extra small devices (phones)
+      'md': '768px',    // Medium devices (tablet)
+      'lg': '1024px',   // Large devices (small desktops)
+      'xl': '1280px',   // Extra large devices (large desktops)
+      '2xl': '1440px',  // 2x Extra large devices (larger screens)
     },
     container: {
       center: true,  // Center container by default
       padding: {
-        mobile: '1.5rem',  // Padding for small screens
-        tablet: '5rem',  // Padding for large screens
-        desktop: '1rem', // Padding for extra large screens
+        DEFAULT: '1rem', // Padding default
+        sm: '1.5rem',  // Padding for small screens
+        md: '2rem',    // Padding for medium screens
+        lg: '2.5rem',  // Padding for large screens
+        xl: '12rem',    // Padding for extra large screens
       },
     },
 
@@ -57,6 +61,14 @@ export default {
     backgroundImage: {
       'officeBg': 'url(/img/office-bg.png)',
       'titlePict': 'url(/img/title-pict.png)',
+      'img1' :'url(/img/card-content/img1.png)',
+      'img2' :'url(/img/card-content/img2.png)',
+      'img3' :'url(/img/card-content/img3.png)',
+      'imgSquare1' :'url(/img/card-content/imgSquare1',
+      'imgSquare2' :'url(/img/card-content/imgSquare2',
+      'imgWide1' :'url(/img/card-content/imgWide1',
+      'imgWide2' :'url(/img/card-content/imgWide2',
+
 
     },
 

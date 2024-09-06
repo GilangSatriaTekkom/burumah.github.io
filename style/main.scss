@@ -3,15 +3,37 @@
 @tailwind utilities;
 
 @layer base {
+
 .button__wide {
-    @apply desktop:py-1 desktop:px-5 mobile:py-1 mobile:px-6 tablet:px-6 tablet:py-1
+    @apply 2xl:py-1 2xl:px-5 sm:py-1 sm:px-6 md:px-6 md:py-1
     } 
-}
+
 
 .card-button__circle {
-    @apply mobile:h-6 mobile:w-6 tablet:h-1 tablet:w-1
+    @apply sm:h-6 sm:w-6 md:h-1 md:w-1
+}
+
+.arrow-button__card__property-category {
+    @apply sm:w-10 sm:h-10 sm:p-2
+}
+
+.button-arrow__card__lates-property {
+    @apply  md:p-4 sm:p-3 2xl:p-4 2xl:w-14 2xl:h-14 md:w-9 md:h-9 sm:h-9 sm:w-9
+}
+
+.arrow-button__card__property-category {
+    @apply 2xl:top-2 2xl:p-4 md:p-4 sm:p-3 2xl:right-5 md:top-3 md:right-4 md:w-14 md:h-14 sm:h-10 sm:w-10 sm:top-1 sm:right-1
+}
+.bg-image__card__property-category {
+    @apply sm:h-[130px] md:h-[250px] 2xl:h-[350px] w-full
+  }
+
+.card__bg {
+    @apply w-full md:h-[250px] 2xl:h-[380px]
+}
 }
 
 @layer utilities{
  
 }
+
