@@ -1,208 +1,476 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mangcoding Template</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mangcoding Template</title>
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-
-<body>
-  <main id="app">
-    <!-- ________Navigation________ -->
-    <nav data-aos="fade-down" id="nav" class="header__navigation w-full p-10 2xl:left-0 flex flex-row items-center justify-between py-3 z-50 fixed">
-      <a href="">
-        <div class="main__logo flex flex-row gap-2 items-center">
-          <img src="/svg/burumah_logo.svg" alt="">
-          <span class="font-bold">Burumah</span>
-        </div>
-      </a>
-      <ul id="navActive" class="navigation__list sm:hidden md:flex 2xl:flex flex-row gap border border__primary rounded-full p-2 bg-white">
-        <li class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5 active">Home</li>
-        <li class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5">About Us</li>
-        <li class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5">Property</li>
-        <li class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5">Our Blog</li>
-        <li class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5">FAQ</li>
-      </ul>
-      <a href="">
-        <div class="button__registration flex flex-row">
-          <button class="button__wide bg__secondary rounded-full py-3 px-5">Registration Now</button>
-          <button
-            class="card-button__circle border border__secondary flex place-content-center items-center btn__arrow rounded-full bg-white">
-            <img class="w-3 h-3 " src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
-          </button>
-        </div>
-      </a>
-    </nav>
-<!-- ________Navigation END________ -->
-
-    <!-- ________HEADER__________ -->
-     
-    <header data-aos="zoom-in" class="hero__section 2xl:container sm:container md:container pb-8">
-      <div class="h-32"></div>
-      <div class="aside__caption__hero flex 2xl:flex-row md:flex-row sm:flex-col sm:text-center sm:gap-12 left-32 w-full 2xl:gap-12 md:gap-12">
-        <h6 class="md:text-start">Smartproperty <br class="sm:hidden md:block 2xl:block ">
-          Invesment
-        </h6>
-        <div class="flex flex-col sm:items-center sm:gap-12 sm:w-full 2xl:items-start 2xl:gap-24 md:gap-12 md:items-start md:justify-start md:w-3/4">
-          <div class="main__title flex flex-col sm:gap-2 2xl:text-start ">
-            <h1 class="sm:text-5xl md:text-7xl 2xl:text-8xl md:text-start">BEST PROPERTY</h1>
-            <div class="flex 2xl:flex-row sm:flex-col md:flex-row gap-2 items-center sm:items-center sm:justify-center">
-              <h1 class="sm:text-5xl md:text-7xl 2xl:text-8xl">FOR FAMILY</h1>
-              <img class="rounded-full w-auto 2xl:h-24 sm:h-28 md:h-24" src="./public/img/title-pict.png" alt="Title Picture">
-            </div>
+  <body>
+    <main id="app">
+      <!-- ________HEADER__________ -->
+      <!-- ________Navigation________ -->
+      <nav
+        id="nav"
+        class="header__navigation w-full p-10 2xl:left-0 flex flex-row items-center justify-between py-3 z-50 sticky top-0"
+      >
+        <a class="main__logo" href="">
+          <div class="flex flex-row gap-2 items-center">
+            <img src="/svg/burumah_logo.svg" alt="" />
+            <span class="font-bold">Burumah</span>
           </div>
-          
-          <p class="hero__description sm:text-center sm:text-md">Are you looking for property and real estate that is responsible, very reliable and has a modern house
-            style,
-            you have come to the right person, look for your dream house and order it from us
-            without difficulty in transactions</p>
-          <a href="">
-            <div class="get-started__button flex flex-row">
-              <button aria-label="Button For Access Registration Page" 
-              class="button__wide border border__secondary rounded-full text-xl">Get Started Now</button>
-              
-              <button class="card-button__circle bg__secondary rounded-full flex place-content-center items-center btn__arrow">
-                <img class="w-3 h-3" src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
-              </button>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="review__hero flex 2xl:flex-row sm:flex-col md:flex-row sm:mt-20 sm:gap-5 justify-between items-center">
-        <div class="flex w-auto h-auto flex-row gap-3 ">
-          <img class="picture__group sm:h-10 sm:w-auto md:h-10 md:w-auto" src="./public/img/profile_group.png" alt="">
-          <div class="rating flex flex-row gap-1 items-center">
-            <i><img class="sm:w-5 sm:h-5" src="./svg/icon_star.svg" alt=""></i>
-            <p>(4.5 Star)</p>
-          </div>
-        </div>
-        <img class="button-group__picture 2xl:w-auto 2xl:h-auto sm:w-52 sm:self-end md:w-auto md:h-28" src="./public/img/btn-group.png" alt="Hero Image">
-      </div>
-
-      <aside data-aos="fade-left" class="aside__socmed__hero sm:hidden md:block 2xl:block flex p-5 absolute w-auto top-1/3 right-0 flex-col space-x-2 ">
-        <a class="socmed__item" href="">
-          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="1" width="44" height="44" rx="22" stroke="#41495D"/>
-          <path d="M33 16.0124C32.2511 16.3594 31.4567 16.5872 30.6433 16.6882C31.4905 16.1571 32.1411 15.316 32.4474 14.3139C31.642 14.8138 30.7608 15.166 29.8419 15.3553C29.0934 14.5212 28.027 14 26.8468 14C24.5807 14 22.7434 15.9216 22.7434 18.2916C22.7434 18.628 22.7798 18.9555 22.8497 19.2697C19.4395 19.0906 16.4161 17.3821 14.3923 14.7856C14.0391 15.4194 13.8368 16.1567 13.8368 16.9431C13.8368 18.4321 14.5612 19.7456 15.6622 20.5153C15.0106 20.4939 14.3733 20.3099 13.8036 19.9784C13.8034 19.9964 13.8034 20.0144 13.8034 20.0324C13.8034 22.1118 15.2177 23.8464 17.0948 24.2406C16.4905 24.4125 15.8567 24.4377 15.2418 24.3142C15.7639 26.0192 17.2793 27.2599 19.0748 27.2947C17.6705 28.4457 15.9012 29.1318 13.9788 29.1318C13.6476 29.1318 13.321 29.1115 13 29.0718C14.8159 30.2895 16.9727 31 19.2898 31C26.8373 31 30.9644 24.4605 30.9644 18.7893C30.9644 18.6031 30.9605 18.418 30.9525 18.234C31.7558 17.6266 32.4492 16.8743 33 16.0124Z" fill="#06080D"/>
-          </svg>
         </a>
-        <a class="socmed__item" href=""><img src="./svg/socmed/icon_instagram.svg" alt=""></a>
-        <a class="socmed__item" href=""><img src="./svg/socmed/icon_whatsapp.svg" alt=""></a>
-        <a class="socmed__item" href=""><img src="./svg/socmed/icon_linkedin.svg" alt=""></a>
-      </aside>
-    </header>
-    <!-- ________HEADER END__________ -->
+        <ul
+          id="navActive"
+          class="navigation__list sm:hidden md:flex 2xl:flex flex-row gap border border__primary rounded-full p-2 bg-white"
+        >
+          <li
+            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5 active"
+          >
+            Home
+          </li>
+          <li
+            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+          >
+            About Us
+          </li>
+          <li
+            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+          >
+            Property
+          </li>
+          <li
+            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+          >
+            Our Blog
+          </li>
+          <li
+            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+          >
+            FAQ
+          </li>
+        </ul>
+        <a href="">
+          <div class="button__registration flex flex-row">
+            <button class="button__wide bg__secondary rounded-full py-3 px-5">
+              Registration Now
+            </button>
+            <button
+              class="border border__secondary flex place-content-center items-center btn__arrow rounded-full bg-white"
+            >
+              <img
+                class="w-3 h-3"
+                src="./svg/arrow-up-right.svg"
+                alt="Arrow Up Right"
+              />
+            </button>
+          </div>
+        </a>
+      </nav>
+      <!-- ________Navigation END________ -->
+      <header
+        data-aos="zoom-in"
+        class="hero__section 2xl:container sm:container md:container pb-8"
+      >
+        <section class="mt-[115px] body">
+          <div
+            class="aside__caption__hero flex 2xl:flex-row md:flex-row sm:flex-col sm:text-center sm:gap-12 left-32 w-full 2xl:gap-12 md:gap-12"
+          >
+            <span class="md:text-start">
+              Smartproperty <br class="sm:hidden md:block 2xl:block" />
+              Invesment
+            </span>
+            <div
+              class="flex flex-col sm:items-center sm:gap-12 sm:w-full 2xl:items-start 2xl:gap-6 md:gap-6 md:items-start md:justify-start md:w-3/4"
+            >
+              <div
+                class="main__title flex flex-col sm:gap-2 2xl:text-start whitespace-nowrap"
+              >
+                <h1
+                  class="sm:text-5xl md:text-7xl lg:text-8xl 2xl:text-8xl md:text-start"
+                >
+                  BEST PROPERTY
+                </h1>
+                <div
+                  class="flex 2xl:flex-row sm:flex-col md:flex-row gap-2 items-center sm:items-center sm:justify-center"
+                >
+                  <h2 class="sm:text-5xl md:text-7xl lg:text-8xl 2xl:text-8xl">
+                    FOR FAMILY
+                  </h2>
+                  <img
+                    class="rounded-full w-auto 2xl:h-24 sm:h-28 md:h-24"
+                    src="./public/img/title-pict.png"
+                    alt="Title Picture"
+                  />
+                </div>
+              </div>
 
-    <!-- ________SLIDER__________ -->
-    <section data-aos="fade-up" class="section__slider bg-black relative overflow-x-hidden overflow-y-hidden">
-      <div class="slider-1 flex flex-row items-center 2xl:gap-3 sm:gap-4 md:gap-3 md py-6 text-white whitespace-nowrap">
-        <h3 class="sm:text-2xl md:text-5xl">PROPERTY</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">BUYUMAH</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">BEST</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">FAMILY</h3>
-      </div>
+              <p
+                class="hero__description sm:text-center md:text-justify sm:text-md"
+              >
+                Are you looking for property and real estate that is
+                responsible, very reliable and has a modern house style, you
+                have come to the right person, look for your dream house and
+                order it from us without difficulty in transactions
+              </p>
+              <a href="">
+                <div class="get-started__button flex flex-row relative">
+                  <button
+                    aria-label="Button For Access Registration Page"
+                    class="absolute bg-white button__wide group hover: border z-30 border__secondary rounded-full text-xl"
+                  >
+                    Get Started Now
+                  </button>
 
-      <div class="section__slider2nd slider-2 sm:top-0 md:top-0 flex flex-row items-center gap-3 2xl:gap-3 sm:gap-4 md:gap-6 py-6 text-white whitespace-nowrap">
-        <h3 class="sm:text-2xl md:text-5xl">PROPERTY</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">BUYUMAH</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">BEST</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">FAMILY</h3>
-      </div>
-    </section>
-    <!-- ________SLIDER END__________ -->
-
-    <!-- ________ABOUT US__________ -->
-    <section data-aos="fade-up" class="section__about container pt-32">
-      <article>
-        <h3 class="title__section__about-us sm:text-center md:text-start">Welcome to burumah</h3>
-        <div class="flex sm:flex-col md:flex-row 2xl:flex-row sm:justify-center sm:items-center sm:gap-12 md:gap-12">
-          <img class="2xl:float-left md:float-left sm:w-96 md:h-36" src="./public/img/house1.png" alt="">
-          <p class="description__section__about-us sm:text-justify md:hidden 2xl:hidden ">Burumah is a property and real estate agent that provides satisfaction to clients who come from anywhere,
-            and helps you get the property and real estate of your dreams</p>
-          <div class="flex flex-col gap-10 2xl:pt-10 2xl:pl-10 md:pt-10 md:pl-10">
-            <p class="sm:hidden md:block 2xl:block">Burumah is a property and real estate agent that provides satisfaction to clients who come from anywhere,
-              and helps you get the property and real estate of your dreams</p>
-            <div class="partner__item-list 2xl:flex 2xl:flex-row 2xl:items-end 2xl:gap-6 sm:grid sm:grid-cols-2 sm:items-center sm:gap-12 md:flex md:flex-row md:items-end md:gap-6">
-              <div class="partner__item w-auto h-12 flex items-center"><img src="./img/companyLogo/century_logo.png" alt="Century Logo"> </div>
-              <div class="partner__item w-auto h-12 flex items-center"><img src="./img/companyLogo/household_logo.png" alt="Household Logo"></div>
-              <div class="partner__item w-auto h-12 flex items-center"><img src="./img/companyLogo/greenhouse_logo.png" alt="Green House Logo"></div>
-              <div class="partner__item w-auto h-12 flex items-center"><img src="./img/companyLogo/paypal_logo.png" alt="Paypal Logo"> </div>
-              <div class="partner__item w-auto h-12 flex items-center sm:col-span-2 sm:place-content-center"><img src="./img/companyLogo/propertyroom_logo.png" alt="Property Room Logo"></div>
+                  <button
+                    class="arrow__wide bg__secondary z-10 rounded-full flex place-content-center items-center btn__arrow"
+                  >
+                    <img
+                      class="w-3 h-3"
+                      src="./svg/arrow-up-right.svg"
+                      alt="Arrow Up Right"
+                    />
+                  </button>
+                </div>
+              </a>
             </div>
           </div>
+
+          <div
+            class="review__hero flex 2xl:flex-row sm:flex-col md:flex-row sm:mt-20 sm:gap-5 justify-between items-center"
+          >
+            <div class="flex w-auto h-auto flex-row gap-3">
+              <img
+                class="picture__group sm:h-10 sm:w-auto md:h-10 md:w-auto"
+                src="./public/img/profile_group.png"
+                alt=""
+              />
+              <div class="rating flex flex-row gap-1 items-center">
+                <i
+                  ><img class="sm:w-5 sm:h-5" src="./svg/icon_star.svg" alt=""
+                /></i>
+                <p>(4.5 Star)</p>
+              </div>
+            </div>
+            <img
+              class="button-group__picture 2xl:w-auto 2xl:h-auto sm:w-52 sm:self-end md:w-auto md:h-28"
+              src="./public/img/btn-group.png"
+              alt="Hero Image"
+            />
+          </div>
+
+          <aside
+            data-aos="fade-left"
+            class="aside__socmed__hero sm:hidden md:block 2xl:block flex p-5 absolute w-auto md:top-32 2xl:top-32 right-0 flex-col space-y-4"
+          >
+            <a
+              class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
+              href=""
+              ><svg
+                class="group-hover:fill-white"
+                width="20"
+                height="17"
+                viewBox="0 0 20 17"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 2.01242C19.2511 2.35943 18.4567 2.58721 17.6433 2.68818C18.4905 2.15705 19.1411 1.31598 19.4474 0.313858C18.642 0.813765 17.7608 1.16598 16.8419 1.35529C16.0934 0.521245 15.027 0 13.8468 0C11.5807 0 9.74344 1.92156 9.74344 4.29155C9.74344 4.62796 9.77977 4.95547 9.84969 5.26965C6.43953 5.09062 3.41609 3.38209 1.39227 0.785586C1.03914 1.41943 0.836797 2.15673 0.836797 2.94313C0.836797 4.4321 1.56125 5.74563 2.66219 6.51528C2.01059 6.49394 1.37332 6.30986 0.803594 5.97843C0.803359 5.99641 0.803359 6.01438 0.803359 6.03244C0.803359 8.11178 2.21773 9.84638 4.09477 10.2406C3.49054 10.4125 2.85674 10.4377 2.2418 10.3142C2.76391 12.0192 4.2793 13.2599 6.07477 13.2947C4.67047 14.4457 2.90117 15.1318 0.978828 15.1318C0.647578 15.1318 0.321016 15.1115 0 15.0718C1.81586 16.2895 3.97266 17 6.28984 17C13.8373 17 17.9644 10.4605 17.9644 4.78926C17.9644 4.60312 17.9605 4.41804 17.9525 4.23403C18.7558 3.62664 19.4492 2.87434 20 2.01242Z"
+                />
+              </svg>
+            </a>
+            <a
+              class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
+              href=""
+              ><svg
+                class="group-hover:fill-white"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.999 7.37695C10.7726 7.37695 9.59651 7.86412 8.72934 8.73129C7.86217 9.59846 7.375 10.7746 7.375 12.001C7.375 13.2273 7.86217 14.4034 8.72934 15.2706C9.59651 16.1378 10.7726 16.625 11.999 16.625C13.2254 16.625 14.4015 16.1378 15.2687 15.2706C16.1358 14.4034 16.623 13.2273 16.623 12.001C16.623 10.7746 16.1358 9.59846 15.2687 8.73129C14.4015 7.86412 13.2254 7.37695 11.999 7.37695ZM11.999 15.004C11.2023 15.004 10.4382 14.6875 9.87485 14.1241C9.31149 13.5607 8.995 12.7967 8.995 12C8.995 11.2032 9.31149 10.4392 9.87485 9.8758C10.4382 9.31245 11.2023 8.99595 11.999 8.99595C12.7957 8.99595 13.5598 9.31245 14.1231 9.8758C14.6865 10.4392 15.003 11.2032 15.003 12C15.003 12.7967 14.6865 13.5607 14.1231 14.1241C13.5598 14.6875 12.7957 15.004 11.999 15.004Z"
+                />
+                <path
+                  d="M16.8046 8.28491C17.3999 8.28491 17.8826 7.80227 17.8826 7.20691C17.8826 6.61154 17.3999 6.12891 16.8046 6.12891C16.2092 6.12891 15.7266 6.61154 15.7266 7.20691C15.7266 7.80227 16.2092 8.28491 16.8046 8.28491Z"
+                />
+                <path
+                  d="M20.5349 6.10991C20.3034 5.51209 19.9496 4.96919 19.4962 4.51596C19.0428 4.06274 18.4998 3.70918 17.9019 3.47791C17.2022 3.21526 16.4631 3.07325 15.7159 3.05791C14.7529 3.01591 14.4479 3.00391 12.0059 3.00391C9.56391 3.00391 9.25091 3.00391 8.29591 3.05791C7.54929 3.07246 6.81066 3.21451 6.11191 3.47791C5.51384 3.70891 4.97067 4.06238 4.51724 4.51563C4.06381 4.96889 3.71013 5.51193 3.47891 6.10991C3.21621 6.80952 3.07452 7.54874 3.05991 8.29591C3.01691 9.25791 3.00391 9.56291 3.00391 12.0059C3.00391 14.4479 3.00391 14.7589 3.05991 15.7159C3.07491 16.4639 3.21591 17.2019 3.47891 17.9029C3.71078 18.5007 4.0648 19.0435 4.51834 19.4967C4.97188 19.9499 5.51497 20.3035 6.11291 20.5349C6.81034 20.8081 7.54928 20.9603 8.29791 20.9849C9.26091 21.0269 9.56591 21.0399 12.0079 21.0399C14.4499 21.0399 14.7629 21.0399 15.7179 20.9849C16.465 20.9697 17.2041 20.828 17.9039 20.5659C18.5017 20.3341 19.0445 19.9802 19.4979 19.5269C19.9512 19.0735 20.3051 18.5307 20.5369 17.9329C20.7999 17.2329 20.9409 16.4949 20.9559 15.7469C20.9989 14.7849 21.0119 14.4799 21.0119 12.0369C21.0119 9.59391 21.0119 9.28391 20.9559 8.32691C20.9443 7.56918 20.8018 6.81915 20.5349 6.10991ZM19.3169 15.6419C19.3105 16.2182 19.2053 16.7891 19.0059 17.3299C18.8557 17.7188 18.6258 18.0719 18.331 18.3666C18.0361 18.6613 17.6829 18.891 17.2939 19.0409C16.7591 19.2394 16.1943 19.3445 15.6239 19.3519C14.6739 19.3959 14.4059 19.4069 11.9699 19.4069C9.53191 19.4069 9.28291 19.4069 8.31491 19.3519C7.74483 19.3449 7.18023 19.2397 6.64591 19.0409C6.25559 18.8919 5.90091 18.6626 5.6048 18.3679C5.30868 18.0731 5.07774 17.7195 4.92691 17.3299C4.73035 16.795 4.62522 16.2307 4.61591 15.6609C4.57291 14.7109 4.56291 14.4429 4.56291 12.0069C4.56291 9.56991 4.56291 9.32091 4.61591 8.35191C4.62237 7.77593 4.72756 7.20533 4.92691 6.66491C5.23191 5.87591 5.85691 5.25491 6.64591 4.95291C7.1805 4.75505 7.74493 4.64987 8.31491 4.64191C9.26591 4.59891 9.53291 4.58691 11.9699 4.58691C14.4069 4.58691 14.6569 4.58691 15.6239 4.64191C16.1943 4.64877 16.7593 4.75398 17.2939 4.95291C17.6828 5.10318 18.036 5.33311 18.3309 5.62794C18.6257 5.92276 18.8556 6.27598 19.0059 6.66491C19.2025 7.19986 19.3076 7.76407 19.3169 8.33391C19.3599 9.28491 19.3709 9.55191 19.3709 11.9889C19.3709 14.4249 19.3709 14.6869 19.3279 15.6429H19.3169V15.6419Z"
+                />
+              </svg>
+            </a>
+            <a
+              class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
+              href=""
+              ><svg
+                class="group-hover:fill-white"
+                width="19"
+                height="22"
+                viewBox="0 0 19 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.1542 4.11836C14.3772 2.33711 12.0107 1.35742 9.49576 1.35742C4.30469 1.35742 0.0805804 5.58153 0.0805804 10.7726C0.0805804 12.4309 0.51317 14.0509 1.33594 15.4802L0 20.3574L4.99174 19.0469C6.36585 19.7976 7.91384 20.192 9.49152 20.192H9.49576C14.6826 20.192 19 15.9679 19 10.7768C19 8.26189 17.9312 5.89961 16.1542 4.11836ZM9.49576 18.6059C8.08772 18.6059 6.70937 18.2284 5.50915 17.5159L5.225 17.3463L2.26473 18.1224L3.05357 15.2342L2.86696 14.9373C2.08237 13.6905 1.67098 12.2527 1.67098 10.7726C1.67098 6.45943 5.18259 2.94782 9.5 2.94782C11.5908 2.94782 13.5545 3.76211 15.0304 5.24224C16.5062 6.72238 17.4138 8.68599 17.4096 10.7768C17.4096 15.0943 13.8089 18.6059 9.49576 18.6059ZM13.7877 12.7447C13.5545 12.6259 12.3967 12.0576 12.1804 11.9813C11.9641 11.9007 11.8071 11.8626 11.6502 12.1001C11.4933 12.3376 11.0437 12.8634 10.9038 13.0246C10.7681 13.1815 10.6281 13.2027 10.3949 13.084C9.01228 12.3927 8.10469 11.8498 7.19286 10.2849C6.95112 9.86925 7.4346 9.89894 7.88415 8.99983C7.96049 8.84291 7.92232 8.7072 7.86295 8.58845C7.80357 8.4697 7.33281 7.31189 7.13772 6.84113C6.94688 6.38309 6.75179 6.44671 6.60759 6.43823C6.47187 6.42974 6.31495 6.42974 6.15804 6.42974C6.00112 6.42974 5.74665 6.48912 5.53036 6.72238C5.31406 6.95988 4.70759 7.52818 4.70759 8.68599C4.70759 9.84381 5.55156 10.9634 5.66607 11.1204C5.78482 11.2773 7.32433 13.6523 9.68661 14.6744C11.1795 15.319 11.7647 15.3742 12.5112 15.2639C12.965 15.196 13.9022 14.6956 14.0973 14.1443C14.2924 13.5929 14.2924 13.1222 14.233 13.0246C14.1779 12.9186 14.021 12.8592 13.7877 12.7447Z"
+                />
+              </svg>
+            </a>
+            <a
+              class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
+              href=""
+              ><svg
+                class="group-hover:fill-white"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.429 8.96876H13.143V10.8188C13.678 9.75476 15.05 8.79876 17.111 8.79876C21.062 8.79876 22 10.9168 22 14.8028V21.9998H18V15.6878C18 13.4748 17.465 12.2268 16.103 12.2268C14.214 12.2268 13.429 13.5718 13.429 15.6868V21.9998H9.429V8.96876ZM2.57 21.8298H6.57V8.79876H2.57V21.8298ZM7.143 4.54976C7.14315 4.88503 7.07666 5.21699 6.94739 5.52634C6.81812 5.8357 6.62865 6.11627 6.39 6.35176C5.9064 6.83238 5.25181 7.10141 4.57 7.09976C3.88939 7.0993 3.23631 6.83096 2.752 6.35276C2.51421 6.11647 2.32539 5.83558 2.19634 5.52619C2.0673 5.2168 2.00058 4.88498 2 4.54976C2 3.87276 2.27 3.22476 2.753 2.74676C3.23689 2.26791 3.89024 1.99946 4.571 1.99976C5.253 1.99976 5.907 2.26876 6.39 2.74676C6.872 3.22476 7.143 3.87276 7.143 4.54976Z"
+                />
+              </svg>
+            </a>
+          </aside>
+        </section>
+      </header>
+      <!-- ________HEADER END__________ -->
+
+      <!-- ________SLIDER__________ -->
+      <section
+        data-aos="fade-up"
+        class="section__slider bg-black relative overflow-x-hidden overflow-y-hidden"
+      >
+        <div
+          class="slider-1 flex flex-row items-center 2xl:gap-2 sm:gap-4 md:gap-3 md py-6 text-white whitespace-nowrap"
+        >
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">PROPERTY</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">BUYUMAH</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">BEST</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">FAMILY</span>
         </div>
-      </article>
-    </section>
-    <!-- ________ABOUT US END__________ -->
+
+        <div
+          class="section__slider2nd slider-2 sm:top-0 md:top-0 flex flex-row items-center gap-3 2xl:gap-3 sm:gap-4 md:gap-6 py-6 text-white whitespace-nowrap"
+        >
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">PROPERTY</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">BUYUMAH</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">BEST</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">FAMILY</span>
+        </div>
+      </section>
+      <!-- ________SLIDER END__________ -->
+
+      <!-- ________ABOUT US__________ -->
+      <section data-aos="fade-up" class="section__about container pt-32 body">
+        <article>
+          <h3
+            class="title__section__about-us sm:text-center md:text-start font-medium"
+          >
+            Welcome to burumah
+          </h3>
+          <div
+            class="flex sm:flex-col md:flex-row 2xl:flex-row sm:justify-center sm:items-center sm:gap-12 md:gap-12"
+          >
+            <img
+              class="2xl:float-left md:float-left sm:w-96 md:h-36"
+              src="./public/img/house1.png"
+              alt=""
+            />
+            <p
+              class="description__section__about-us sm:text-justify md:hidden 2xl:hidden"
+            >
+              Burumah is a <b>property and real estate</b> agent that provides
+              satisfaction to clients who come from anywhere, and helps you get
+              the property and real estate of your dreams
+            </p>
+            <div
+              class="flex flex-col gap-10 2xl:pt-10 2xl:pl-10 md:pt-10 md:pl-10"
+            >
+              <p class="sm:hidden md:block 2xl:block">
+                Burumah is a <b>property and real estate</b> agent that provides
+                satisfaction to clients who come from anywhere, and helps you
+                get the property and real estate of your dreams
+              </p>
+              <div
+                class="partner__item-list 2xl:flex 2xl:flex-row 2xl:items-end 2xl:gap-6 sm:grid sm:grid-cols-2 sm:items-center sm:gap-12 md:flex md:flex-row md:items-end md:gap-6"
+              >
+                <div class="partner__item w-auto h-12 flex items-center">
+                  <img
+                    src="./img/companyLogo/century_logo.png"
+                    alt="Century Logo"
+                  />
+                </div>
+                <div class="partner__item w-auto h-12 flex items-center">
+                  <img
+                    src="./img/companyLogo/household_logo.png"
+                    alt="Household Logo"
+                  />
+                </div>
+                <div class="partner__item w-auto h-12 flex items-center">
+                  <img
+                    src="./img/companyLogo/greenhouse_logo.png"
+                    alt="Green House Logo"
+                  />
+                </div>
+                <div class="partner__item w-auto h-12 flex items-center">
+                  <img
+                    src="./img/companyLogo/paypal_logo.png"
+                    alt="Paypal Logo"
+                  />
+                </div>
+                <div
+                  class="partner__item w-auto h-12 flex items-center sm:col-span-2 sm:place-content-center"
+                >
+                  <img
+                    src="./img/companyLogo/propertyroom_logo.png"
+                    alt="Property Room Logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- ________ABOUT US END__________ -->
 
       <!-- ________OUR TEAM SECTION__________ -->
-      <section data-aos="fade-up" class="section__our-team">
+      <section data-aos="fade-up" class="section__our-team body-2">
         <article>
           <div class="container pt-32">
-            <div class="flex 2xl:flex-row 2xl:justify-between sm:flex-col sm:justify-center gap-5 md:flex-row md:justify-between">
-              <h6 class="aside__caption__our-team flex 2xl:items-start sm:justify-center md:items-start">Who we are</h6>
-              <h2 class="title__section__our-team sm:text-5xl sm:text-center md:text-6xl md:text-start">BEST AGENCY<br>
-                PROPERTY HOUSE</h2>
-              <h6 class="description__section__our-team flex 2xl:items-end 2xl:w-60 sm:text-center md:items-end md:w-60">Trusted property and housing agent who often helps clients to get
-                their dream home without any guarantees</h6>
+            <div
+              class="flex 2xl:flex-row 2xl:justify-between sm:flex-col sm:justify-center gap-5 md:flex-row md:justify-between"
+            >
+              <span
+                class="aside__caption__our-team flex 2xl:items-start sm:justify-center md:items-start"
+              >
+                Who we are
+              </span>
+              <h2
+                class="title__section__our-team sm:text-5xl sm:text-center md:text-6xl md:text-start 2xl:text-7xl"
+              >
+                BEST AGENCY<br />
+                PROPERTY HOUSE
+              </h2>
+              <p
+                class="description__section__our-team flex 2xl:items-end 2xl:w-60 sm:text-center md:text-start md:items-end md:w-60"
+              >
+                Trusted property and housing agent who often helps clients to
+                get their dream home without any guarantees
+              </p>
             </div>
           </div>
-  
+
           <div class="container pt-10">
-            <div class="bg-image__our-team flex justify-end p-6 2xl:bg-officeBg md:bg-officeBg bg-cover rounded-3xl">
-              <div data-aos="fade-left" class="glass-bg__our-team flex flex-col items-end 2xl:w-96 md:w-96 sm:w-full glass p-8 aos-init aos-animate">
+            <div
+              class="bg-image__our-team flex justify-end p-6 2xl:bg-officeBg md:bg-officeBg object-cover rounded-3xl"
+            >
+              <div
+                data-aos="fade-left"
+                class="glass-bg__our-team flex flex-col items-end 2xl:w-96 md:w-96 sm:w-full glass p-8 aos-init aos-animate"
+              >
                 <div class="flex flex-col gap-4 mb-11 w-full">
-                  <h4 class="title__our-team left-0 text-[2rem]"><b>Our Team</b></h4>
+                  <h4 class="title__our-team left-0 text-[2rem] font-bold">
+                    Our Team
+                  </h4>
                   <div class="flex flex-row gap-3">
-                    <figure class="profile__picture"><img class="rounded-full" src="./public/img/malePict1.png" alt="Team Member"></figure>
+                    <figure class="profile__picture">
+                      <img
+                        class="rounded-full"
+                        src="./public/img/malePict1.png"
+                        alt="Team Member"
+                      />
+                    </figure>
+
                     <div class="flex flex-col gap-1">
-                      <h5 class="profile__name">
-                        <b>Nugaraha</b>
-                      </h5>
-                      <h6 class="profile__position">Owner</h6>
+                      <b class="profile__name text-xl"> Nugaraha </b>
+                      <span class="profile__position">Owner</span>
                     </div>
                   </div>
                   <div class="flex flex-row gap-3">
-                    <figure class="profile__picture"><img class="rounded-full" src="./public/img/malePict2.png" alt="Team Member"></figure>
+                    <figure class="profile__picture">
+                      <img
+                        class="rounded-full"
+                        src="./public/img/malePict2.png"
+                        alt="Team Member"
+                      />
+                    </figure>
                     <div class="flex flex-col gap-1">
-                      <h5 class="profile__name">
-                        <b>Rizwan Gustama</b>
-                      </h5>
-                      <h6 class="profile__position">Marketing Branding</h6>
+                      <b class="profile__name text-xl"> Rizwan Gustama </b>
+                      <span class="profile__position">Marketing Branding</span>
                     </div>
                   </div>
                   <div class="flex flex-row gap-3">
-                    <figure class="profile__picture"><img class="rounded-full" src="./public/img/malePict3.png" alt="Team Member"></figure>
+                    <figure class="profile__picture">
+                      <img
+                        class="rounded-full"
+                        src="./public/img/malePict3.png"
+                        alt="Team Member"
+                      />
+                    </figure>
                     <div class="flex flex-col gap-1">
-                      <h5 class="profile__name">
-                        <b>Purwa Adi</b>
-                      </h5>
-                      <h6 class="profile__position">Designer Property</h6>
+                      <b class="profile__name text-xl"> Purwa Adi </b>
+                      <p class="profile__position">Designer Property</p>
                     </div>
                   </div>
                 </div>
                 <div class="flex flex-row w-full">
-                  <button class="button__registration bg__secondary rounded-full py-3 px- w-full sm:text-2xl" aria-label="Button For Access Registration Page">Registration Now</button>
-                  <button class="button-arrow__registration border border__secondary flex place-content-center items-center btn__arrow rounded-full">
-                    <img class="w-3 h-3 " src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+                  <button
+                    class="button__registration bg__secondary rounded-full w-full sm:text-2xl"
+                    aria-label="Button For Access Registration Page"
+                  >
+                    Registration Now
+                  </button>
+                  <button
+                    class="button-arrow__registration border border__secondary flex place-content-center items-center btn__arrow rounded-full"
+                  >
+                    <img
+                      class="w-3 h-3"
+                      src="./svg/arrow-up-right.svg"
+                      alt="Arrow Up Right"
+                    />
                   </button>
                 </div>
-                <div>
-  
-                </div>
-  
               </div>
             </div>
           </div>
@@ -210,509 +478,1158 @@
       </section>
       <!-- ________OUR TEAM END__________ -->
 
-  
+      <!-- ________LATES PROPERTY__________ -->
+      <section
+        data-aos="fade-up"
+        class="section__lates-property container pt-32 flex flex-col gap-10 white"
+      >
+        <article class="flex flex-col gap-10">
+          <div
+            class="flex 2xl:flex-row sm:flex-col sm:items-center sm:text-center sm:gap-12 2xl:justify-between 2xl:gap-64 md:flex-row md:justify-between"
+          >
+            <div class="flex flex-col gap-5">
+              <h3 class="title__section__lates-property md:text-start">
+                Lates Property
+              </h3>
+              <p
+                class="description__section__lates-property text-pretty md:text-start"
+              >
+                We have completed several housing, villa and property orders
+                with our professional team, at costs that suit you
+              </p>
+            </div>
 
-
-    <!-- ________LATES PROPERTY__________ -->
-    <section data-aos="fade-up" class="section__lates-property container pt-32 flex flex-col gap-10 white">
-      <article class="flex flex-col gap-10">
-        <div class="flex 2xl:flex-row sm:flex-col sm:items-center sm:text-center sm:gap-12 2xl:justify-between 2xl:gap-64 md:flex-row md:justify-between">
-          <div class="flex flex-col gap-5">
-            <h3 class="title__section__lates-property md:text-start">Lates Property</h3>
-            <p class="description__section__lates-property text-pretty md:text-start">We have completed several housing, villa and property orders with our professional team, at costs that suit you</p>
-          </div>
-
-          <div class="flex items-end">
-            <div class="flex items-center gap-4 relative">
-              <button aria-label="Button for swipe to previous Lates Property card" id="button-prev"
-                class="button__prev flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:px-6 sm:py-3 md:w-24 md:h-14">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                </svg>
-                
-              </button>
-              <p id="slide-number">01/03</p>
-              <button aria-label="Button for swipe to next Lates Property card" id="button-next"
-                class="button__next flex items-center justify-center border rounded-full  2xl:w-24 2xl:h-14 sm:px-6 sm:py-3 md:w-24 md:h-14">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>                
-              </button>
+            <div class="flex items-end">
+              <div class="flex items-center gap-4 relative">
+                <button
+                  aria-label="Button for swipe to previous Lates Property card"
+                  id="button-prev"
+                  class="button__prev flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:px-6 sm:py-3 md:w-24 md:h-14"
+                >
+                  <svg
+                    class="group-hover:fill-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </button>
+                <p id="slide-number">01/03</p>
+                <button
+                  aria-label="Button for swipe to next Lates Property card"
+                  id="button-next"
+                  class="button__next flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:px-6 sm:py-3 md:w-24 md:h-14"
+                >
+                  <svg
+                    class="group-hover:fill-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
+        </article>
 
-        </div>
-      </article>
-
-      <swiper-container class="swiper-container" slides-per-view="3">
-
-        <swiper-slide class="swiper-slide flex flex-col 2xl:w-1/3 md:w-1/3 gap-6 pr-6">
-          <figure class="card__lates-property relative">
-            
-            <div class="card__corner bg-white card__corner__side absolute right-0 flex items-center justify-center">
-              <button class="button-arrow__card__lates-property absolute p-3 card-button__circle z-20 bg__secondary rounded-full flex justify-center items-center">
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+        <swiper-container class="swiper-container" slides-per-view="3">
+          <swiper-slide
+            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+          >
+            <div
+              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
               </button>
             </div>
-            <img class="card__bg bg-img1 rounded-3xl bg-cover " src="./public/img/card-content/img1.png" alt="">
-          </figure>
+            <figure class="card__lates-property">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/img1.png"
+                alt=""
+              />
+            </figure>
 
-          <div>
-            <div class="flex flex-col gap-3">
-              <h4 class="card__title"><b>Sekarwangi Village</b></h4>
-              <h6 class="card__address">2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 class="card__title"><b>Sekarwangi Village</b></h4>
+                <p class="card__address">
+                  2972 Westheimer Rd. Santa Ana, Illinois 85486
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$943.65</b></p>
+                <p class="card__price__discount"><del>$999.000</del></p>
+              </div>
             </div>
-            <div class="flex flex-row gap-1 mt-4 items-end">
-              <h4 class="card__price"><b>$943.65</b></h4>
-              <h6 class="card__price__discount"><del>$999.000</del></h6>
-            </div>
-          </div>
-        </swiper-slide>
+          </swiper-slide>
 
-        <swiper-slide class="swiper-slide flex flex-col 2xl:w-1/3 md:w-1/3 gap-6 pr-6">
-          <figure class="card__lates-property relative">
-            
-            <div class="card__corner bg-white card__corner__side absolute right-0 rounded-bl-3xl flex items-center justify-center">
-              <button class="button-arrow__card__lates-property absolute p-3 card-button__circle z-20 bg__secondary rounded-full flex justify-center items-center">
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+          <swiper-slide
+            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+          >
+            <div
+              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
               </button>
             </div>
-            <img class="card__bg bg-img1 rounded-3xl bg-cover " src="./public/img/card-content/img2.png" alt="">
-          </figure>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/img2.png"
+                alt=""
+              />
+            </figure>
 
-          <div>
-            <div class="flex flex-col gap-3">
-              <h4 class="card__title"><b>Leuwigoong house sevilage</b></h4>
-              <h6 class="card__address">2118 Thornridge Cir. Syracuse, Connecticut 35624</h6>
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 class="card__title"><b>Leuwigoong house sevilage</b></h4>
+                <p class="card__address">
+                  2118 Thornridge Cir. Syracuse, Connecticut 35624
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$576.28</b></p>
+                <p class="card__price__discount"><del>$599.000</del></p>
+              </div>
             </div>
-            <div class="flex flex-row gap-1 mt-4 items-end">
-              <h4 class="card__price"><b>$576.28</b></h4>
-              <h6 class="card__price__discount"><del>$599.000</del></h6>
-            </div>
-          </div>
-        </swiper-slide>
+          </swiper-slide>
 
-        <swiper-slide class="swiper-slide flex flex-col 2xl:w-1/3 md:w-1/3 gap-6 pr-6">
-          <figure class="card__lates-property relative">
-            
-            <div class="card__corner bg-white card__corner__side absolute right-0 rounded-bl-3xl flex items-center justify-center">
-              <button class="button-arrow__card__lates-property absolute p-3 card-button__circle z-20 bg__secondary rounded-full flex justify-center items-center">
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+          <swiper-slide
+            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+          >
+            <div
+              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
               </button>
             </div>
-            <img class="card__bg bg-img1 rounded-3xl bg-cover " src="./public/img/card-content/img3.png" alt="">
-          </figure>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/img3.png"
+                alt=""
+              />
+            </figure>
 
-          <div>
-            <div class="flex flex-col gap-3">
-              <h4 class="card__title"><b>Leuwipeti village</b></h4>
-              <h6 class="card__address">3517 W. Gray St. Utica, Pennsylvania 57867</h6>
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 class="card__title"><b>Leuwipeti village</b></h4>
+                <p class="card__address">
+                  3517 W. Gray St. Utica, Pennsylvania 57867
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$748.55</b></p>
+                <p class="card__price__discount"><del>$799.000</del></p>
+              </div>
             </div>
-            <div class="flex flex-row gap-1 mt-4 items-end">
-              <h4 class="card__price"><b>$748.55</b></h4>
-              <h6 class="card__price__discount"><del>$799.000</del></h6>
-            </div>
-          </div>
-        </swiper-slide>
+          </swiper-slide>
 
-        <swiper-slide class="swiper-slide flex flex-col 2xl:w-1/3 md:w-1/3 gap-6 pr-6">
-          <figure class="card__lates-property relative">
-            
-            <div class="card__corner bg-white card__corner__side absolute right-0 rounded-bl-3xl flex items-center justify-center">
-              <button class="button-arrow__card__lates-property absolute p-3 card-button__circle z-20 bg__secondary rounded-full flex justify-center items-center">
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+          <swiper-slide
+            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+          >
+            <div
+              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
               </button>
             </div>
-            <img class="card__bg bg-img1 rounded-3xl bg-cover " src="./public/img/card-content/img1.png" alt="">
-          </figure>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/img1.png"
+                alt=""
+              />
+            </figure>
 
-          <div>
-            <div class="flex flex-col gap-3">
-              <h4 class="card__title"><b>Sekarwangi Village</b></h4>
-              <h6 class="card__address">2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 class="card__title"><b>Sekarwangi Village</b></h4>
+                <p class="card__address">
+                  2972 Westheimer Rd. Santa Ana, Illinois 85486
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$943.65</b></p>
+                <p class="card__price__discount"><del>$999.000</del></p>
+              </div>
             </div>
-            <div class="flex flex-row gap-1 mt-4 items-end">
-              <h4 class="card__price"><b>$943.65</b></h4>
-              <h6 class="card__price__discount"><del>$999.000</del></h6>
+          </swiper-slide>
+
+          <swiper-slide
+            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+          >
+            <div
+              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+              </button>
             </div>
-          </div>
-        </swiper-slide>
+            <figure class="card__lates-property">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/img1.png"
+                alt=""
+              />
+            </figure>
 
-        
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 class="card__title"><b>Sekarwangi Village</b></h4>
+                <p class="card__address">
+                  2972 Westheimer Rd. Santa Ana, Illinois 85486
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$943.65</b></p>
+                <p class="card__price__discount"><del>$999.000</del></p>
+              </div>
+            </div>
+          </swiper-slide>
 
-      </swiper-container>
-    </section>
+          <swiper-slide
+            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+          >
+            <div
+              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+              </button>
+            </div>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/img2.png"
+                alt=""
+              />
+            </figure>
 
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 class="card__title"><b>Leuwigoong house sevilage</b></h4>
+                <p class="card__address">
+                  2118 Thornridge Cir. Syracuse, Connecticut 35624
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$576.28</b></p>
+                <p class="card__price__discount"><del>$599.000</del></p>
+              </div>
+            </div>
+          </swiper-slide>
 
-    <!-- ________LATES PROPERTY END__________ -->
+          <swiper-slide
+            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+          >
+            <div
+              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+              </button>
+            </div>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/img3.png"
+                alt=""
+              />
+            </figure>
 
-    <!-- ________PROPERTY CATEGORY__________ -->
-    <section data-aos="fade-up" x-data="{
-      activeCategory: '', // Initialize with your default value
-      isActiveCategory(category) {
-        return this.activeCategory === category;
-    },
-    toggleCategory(category) {
-        // Toggle the activeCategory between the clicked category and an empty string
-        this.activeCategory = this.isActiveCategory(category) ? '' : category;
-    },
-      isMatchingCategory(title) {
-          if (!this.activeCategory.trim()) {
-              return true; // Show all if activeCategory is empty or just whitespace
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 class="card__title"><b>Leuwipeti village</b></h4>
+                <p class="card__address">
+                  3517 W. Gray St. Utica, Pennsylvania 57867
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$748.55</b></p>
+                <p class="card__price__discount"><del>$799.000</del></p>
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide
+            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+          >
+            <div
+              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+              </button>
+            </div>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/img1.png"
+                alt=""
+              />
+            </figure>
+
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 class="card__title"><b>Sekarwangi Village</b></h4>
+                <p class="card__address">
+                  2972 Westheimer Rd. Santa Ana, Illinois 85486
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$943.65</b></p>
+                <p class="card__price__discount"><del>$999.000</del></p>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </section>
+
+      <!-- ________LATES PROPERTY END__________ -->
+
+      <!-- ________PROPERTY CATEGORY__________ -->
+      <section
+        data-aos="fade-up"
+        x-data="{
+          activeCategory: 'House',
+          isActiveCategory(category) {
+            const isActive = this.activeCategory === category;
+            console.log('activeCategory:', this.activeCategory);
+            console.log('category:', category);
+            console.log('isActive:', isActive);
+            return isActive;
+          },
+          isMatchingCategory(title) {
+            console.log('activeCategory:', this.activeCategory);
+            console.log('title:', title);
+      
+            if (!this.activeCategory.trim()) {
+              console.log('No active category set. Returning true.');
+              return true;
+            }
+      
+            const activeWords = this.activeCategory.toLowerCase().split(/\s+/);
+            const titleWords = title.toLowerCase().split(/\s+/);
+      
+            console.log('activeWords:', activeWords);
+            console.log('titleWords:', titleWords);
+      
+            const isMatch = activeWords.some(word => titleWords.includes(word));
+            console.log('isMatch:', isMatch);
+      
+            return isMatch;
           }
-          const activeWords = this.activeCategory.toLowerCase().split(/\s+/);
-          const titleWords = title.toLowerCase().split(/\s+/);
-          return activeWords.some(word => titleWords.includes(word));
-      },
-      
-  }"
-   class="section__category 2xl:container sm:container md:container pt-32 flex flex-col gap-10">
-      <div class="flex md:flex-row md:items-end md:justify-between gap-32 sm:flex-col sm:gap-12 sm:text-center sm:items-center">
-        <div class="flex flex-col sm:gap-12 2xl:gap-5 2xl:w-1/2 md:w-1/2 md:gap-5">
-          <h3 class="title__section__property-category md:text-start">Property Category</h3>
-          <p class="description__section__property-category sm:text-pretty md:text-start">Lörem ipsum päde hypertropi eller mitin antir evis ofäns i jonin som pseudonäning. Manat preber. Pös vil gigana: nisöbel på igt.</p>
+        }"
+        class="section__category 2xl:container sm:container md:container pt-32 flex flex-col gap-10"
+      >
+        <div
+          class="flex md:flex-row md:items-end md:justify-between gap-32 sm:flex-col sm:gap-12 sm:text-center sm:items-center"
+        >
+          <div
+            class="flex flex-col sm:gap-12 2xl:gap-5 2xl:w-1/2 md:w-1/2 md:gap-5"
+          >
+            <h3 class="title__section__property-category md:text-start">
+              Property Category
+            </h3>
+            <p
+              class="description__section__property-category sm:text-pretty md:text-start"
+            >
+              Lörem ipsum päde hypertropi eller mitin antir evis ofäns i jonin
+              som pseudonäning. Manat preber. Pös vil gigana: nisöbel på igt.
+            </p>
+          </div>
 
+          <div
+            class="navigation__category flex 2xl:justify-end 2xl:items-end md:justify-end md:items-end"
+          >
+            <ul
+              class="flex flex-row border border__primary rounded-full p-2 w-full"
+            >
+              <li
+                x-on:click="activeCategory ='House'"
+                :class="{ 'active': isActiveCategory('House') }"
+                class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5 active"
+              >
+                House
+              </li>
+              <li
+                x-on:click="activeCategory ='Real Estate'"
+                class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+                :class="{ 'active': isActiveCategory('Real Estate') }"
+              >
+                Real estate
+              </li>
+              <li
+                x-on:click="activeCategory ='Apartment'"
+                class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+                :class="{ 'active': isActiveCategory('Apartment') }"
+              >
+                Apartment
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="navigation__category flex 2xl:justify-end 2xl:items-end md:justify-end md:items-end">
-          <ul class="flex flex-row border border__primary rounded-full p-2 w-full">
-            <li
-            x-on:click="toggleCategory('House')"
-            :class="{ 'active': isActiveCategory('House') }" 
-            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5 active" >House</li>
-            <li
-            x-on:click="toggleCategory('Real Estate')"
-            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
-            :class="{ 'active': isActiveCategory('Real Estate') }" >Real estate</li>
-            <li
-            x-on:click="toggleCategory('Apartment')"
-            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
-            :class="{ 'active': isActiveCategory('Apartment') }" >Apartment</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-3 2xl:grid-cols-3 flex-col gap-6">
-
-        <div class="card__property-category w-full col-span-2"  x-show="isMatchingCategory($el.querySelector('.card__title').innerText)">
-          <figure class="card__lates-property relative">
-            
-            <div class="card__corner bg-white card__corner__side absolute right-0 flex items-center justify-center">
-              <button class="button-arrow__card__lates-property absolute p-3 card-button__circle z-20 bg__secondary rounded-full flex justify-center items-center">
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+        <div class="grid grid-cols-3 2xl:grid-cols-3 flex-col">
+          <div
+            class="card__property-category group w-full col-span-2 relative"
+            x-show="isMatchingCategory($el.querySelector('.card__title').innerText)"
+          >
+            <div
+              class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
               </button>
             </div>
-            <img class="card__bg bg-img1 rounded-3xl bg-cover " src="./public/img/card-content/imgWide1.png" alt="">
-          </figure>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/imgWide1.png"
+                alt=""
+              />
+            </figure>
 
-          <div>
-            <div class="flex flex-col gap-3">
-              <h4 id="card-title" class="card__title"><b>Babakansirna House</b></h4>
-              <h6 class="card__address">2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
-            </div>
-            <div class="flex flex-row gap-1 mt-4 items-end">
-              <h4 class="card__price"><b>$943.65</b></h4>
-              <h6 class="card__price__discount"><del>$999.000</del></h6>
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 id="card-title" class="card__title">
+                  <b>Babakansirna House</b>
+                </h4>
+                <p class="card__address">
+                  2972 Westheimer Rd. Santa Ana, Illinois 85486
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$943.65</b></p>
+                <p class="card__price__discount"><del>$999.000</del></p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card__property-category w-full" x-show="isMatchingCategory($el.querySelector('.card__title').innerText)">
-          <figure class="card__lates-property relative">
-            
-            <div class="card__corner bg-white card__corner__side absolute right-0 flex items-center justify-center">
-              <button class="button-arrow__card__lates-property absolute p-3 card-button__circle z-20 bg__secondary rounded-full flex justify-center items-center">
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+          <div
+            class="card__property-category group w-full relative"
+            x-show="isMatchingCategory($el.querySelector('.card__title').innerText)"
+          >
+            <div
+              class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
               </button>
             </div>
-            <img class="card__bg bg-img1 rounded-3xl bg-cover " src="./public/img/card-content/imgSquare1.png" alt="">
-          </figure>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/imgSquare1.png"
+                alt=""
+              />
+            </figure>
 
-          <div>
-            <div class="flex flex-col gap-3">
-              <h4 id="card-title" class="card__title"><b>Pelangi House</b></h4>
-              <h6 class="card__address">2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
-            </div>
-            <div class="flex flex-row gap-1 mt-4 items-end">
-              <h4 class="card__price"><b>$943.65</b></h4>
-              <h6 class="card__price__discount"><del>$999.000</del></h6>
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 id="card-title" class="card__title">
+                  <b>Pelangi House</b>
+                </h4>
+                <p class="card__address">
+                  2972 Westheimer Rd. Santa Ana, Illinois 85486
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$943.65</b></p>
+                <p class="card__price__discount"><del>$999.000</del></p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card__property-category w-full" x-show="isMatchingCategory($el.querySelector('.card__title').innerText)">
-          <figure class="card__lates-property relative">
-            
-            <div class="card__corner bg-white card__corner__side absolute right-0 flex items-center justify-center">
-              <button class="button-arrow__card__lates-property absolute p-3 card-button__circle z-20 bg__secondary rounded-full flex justify-center items-center">
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+          <div
+            class="card__property-category group w-full relative"
+            x-show="isMatchingCategory($el.querySelector('.card__title').innerText)"
+          >
+            <div
+              class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
               </button>
             </div>
-            <img class="card__bg bg-img1 rounded-3xl bg-cover " src="./public/img/card-content/imgSquare2.png" alt="">
-          </figure>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/imgSquare2.png"
+                alt=""
+              />
+            </figure>
 
-          <div>
-            <div class="flex flex-col gap-3">
-              <h4 id="card-title" class="card__title"><b>Real Estate</b></h4>
-              <h6 class="card__address">2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
-            </div>
-            <div class="flex flex-row gap-1 mt-4 items-end">
-              <h4 class="card__price"><b>$943.65</b></h4>
-              <h6 class="card__price__discount"><del>$999.000</del></h6>
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 id="card-title" class="card__title"><b>Real Estate</b></h4>
+                <p class="card__address">
+                  2972 Westheimer Rd. Santa Ana, Illinois 85486
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$943.65</b></p>
+                <p class="card__price__discount"><del>$999.000</del></p>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <div class="card__property-category w-full col-span-2" x-show="isMatchingCategory($el.querySelector('.card__title').innerText)"> 
-          <figure class="card__lates-property relative">
-            
-            <div class="card__corner bg-white card__corner__side absolute right-0 flex items-center justify-center">
-              <button class="button-arrow__card__lates-property absolute p-3 card-button__circle z-20 bg__secondary rounded-full flex justify-center items-center">
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right">
+
+          <div
+            class="card__property-category group w-full col-span-2 relative"
+            x-show="isMatchingCategory($el.querySelector('.card__title').innerText)"
+          >
+            <div
+              class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
+            >
+              <button
+                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+              >
+                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
               </button>
             </div>
-            <img class="card__bg bg-img1 rounded-3xl bg-cover " src="./public/img/card-content/imgWide2.png" alt="">
-          </figure>
+            <figure class="card__lates-property relative">
+              <img
+                class="card__bg bg-img1 rounded-3xl object-cover"
+                src="./public/img/card-content/imgWide2.png"
+                alt=""
+              />
+            </figure>
 
-          <div>
-            <div class="flex flex-col gap-3">
-              <h4 id="card-title" class="card__title"><b>Property House</b></h4>
-              <h6 class="card__address">2972 Westheimer Rd. Santa Ana, Illinois 85486</h6>
-            </div>
-            <div class="flex flex-row gap-1 mt-4 items-end">
-              <h4 class="card__price"><b>$943.65</b></h4>
-              <h6 class="card__price__discount"><del>$999.000</del></h6>
+            <div>
+              <div class="flex flex-col gap-3">
+                <h4 id="card-title" class="card__title">
+                  <b>Property House</b>
+                </h4>
+                <p class="card__address">
+                  2972 Westheimer Rd. Santa Ana, Illinois 85486
+                </p>
+              </div>
+              <div class="flex flex-row gap-1 mt-4 items-end">
+                <p class="card__price"><b>$943.65</b></p>
+                <p class="card__price__discount"><del>$999.000</del></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      
+      </section>
+      <!-- ________PROPERTY CATEGORY END__________ -->
 
-    </section>
-    <!-- ________PROPERTY CATEGORY END__________ -->
-
-    <!-- ________TESTIMONIAL__________ -->
-    <section data-aos="fade-up" class="section__testimonial 2xl:container sm:container md:container pt-32 flex flex-col gap-10">
-      <div class="flex 2xl:flex-row sm:flex-col sm:text-center gap-6">
-        <h6 class="aside__caption__testimonial  sm:hidden">Testimonial</h6>
-        <div class="w-full">
-          <div class="flex flex-row sm:justify-between md:justify-between 2xl:justify-between">
-            <i><img class="icon_testimonial sm:w-14" src="./public/svg/quote.svg" alt="Quote icon for testimonial"></i>
-            <i><img class="icon_testimonial sm:w-44" src="./public/img/companyLogo/greenhouse_logo.png" alt="Greenhouse logo for testimonial"></i>
-          </div>
-          
-          <div id="controls-carousel" class="relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative sm:h-96 md:h-48 overflow-hidden rounded-lg">
-                <div class="items__testimonial absolute inset-0 duration-700 ease-in-out" data-carousel-item>
-                  <h3 class="items__testimonial my-6">We believe in Burumah, because it gives us satisfaction for very satisfying results</i>
-                  </h3>
-                </div>
-                <div class="items__testimonial absolute inset-0 duration-700 ease-in-out" data-carousel-item>
-                  <h3 class="my-6">We believe in Burumah, because it gives us satisfaction for very satisfying results</i>
-                  </h3>
-                </div>
-                <div class="items__testimonial absolute inset-0 duration-700 ease-in-out" data-carousel-item>
-                  <h3 class="my-6">We believe in Burumah, because it gives us satisfaction for very satisfying results</i>
-                  </h3>
-                </div>
-                <div class="items__testimonial absolute inset-0 duration-700 ease-in-out" data-carousel-item>
-                  <h3 class="my-6">We believe in Burumah, because it gives us satisfaction for very satisfying results</i>
-                  </h3>
-                </div>
-                <div class="items__testimonial absolute inset-0 duration-700 ease-in-out" data-carousel-item>
-                  <h3 class="my-6">We believe in Burumah, because it gives us satisfaction for very satisfying results</i>
-                  </h3>
-                </div>
+      <!-- ________TESTIMONIAL__________ -->
+      <section
+        data-aos="fade-up"
+        class="section__testimonial 2xl:container sm:container md:container pt-32 flex flex-col gap-10"
+      >
+        <div class="flex 2xl:flex-row sm:flex-col sm:text-center gap-6">
+          <h6 class="aside__caption__testimonial sm:hidden">Testimonial</h6>
+          <div class="w-full">
+            <div
+              class="flex flex-row sm:justify-between md:justify-between 2xl:justify-between"
+            >
+              <i
+                ><img
+                  class="icon_testimonial sm:w-14"
+                  src="./public/svg/quote.svg"
+                  alt="Quote icon for testimonial"
+              /></i>
+              <i
+                ><img
+                  class="icon_testimonial sm:w-44"
+                  src="./public/img/companyLogo/greenhouse_logo.png"
+                  alt="Greenhouse logo for testimonial"
+              /></i>
             </div>
-            <i class="icon_testimonial flex justify-end"><img class="sm:w-14" src="./public/svg/quote.svg" alt="Quote icon for testimonial"></i>
-            <div class="flex flex-row justify-between">
-              <div class="flex flex-col gap-5">
-                <div class="flex flex-row gap-3">
-                  <figure><img class="profile__picture rounded-full" src="./public/img/malePict1.png" alt="Team Member"></figure>
-                  <div class="flex flex-col gap-1">
-                    <h5>
-                      <b class="profile__name">Samsul Arifin</b>
-                    </h5>
-                    <h6 class="profile__position">Client</h6>
+
+            <div
+              id="controls-carousel"
+              class="relative w-full"
+              data-carousel="slide"
+            >
+              <!-- Carousel wrapper -->
+              <div
+                class="relative sm:h-96 overflow-hidden rounded-lg md:h-96 2xl:h-96"
+              >
+                <div
+                  class="items__testimonial absolute inset-0 duration-700 ease-in-out"
+                  data-carousel-item
+                >
+                  <q class="items__testimonial my-6">
+                    <i
+                      >We believe in Burumah, because it gives us satisfaction
+                      for very satisfying results</i
+                    >
+                  </q>
+                  <div
+                    class="flex flex-col gap-5 2xl:mt-[104px] md:mt-[60px] sm:mt-[60px]"
+                  >
+                    <div class="flex flex-row gap-3">
+                      <figure>
+                        <img
+                          class="profile__picture rounded-full"
+                          src="./public/img/malePict1.png"
+                          alt="Team Member"
+                        />
+                      </figure>
+                      <div class="flex flex-col gap-1 text-start">
+                        <a>
+                          <b class="profile__name">Samsul Arifin</b>
+                        </a>
+                        <a href=""
+                          ><span class="profile__position">Client</span></a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="rating flex flex-row gap-2">
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                    </div>
                   </div>
                 </div>
-      
-                <div class="rating flex flex-row gap-2">
-                  <i><img src="./svg/icon_star.svg" alt=""></i>
-                  <i><img src="./svg/icon_star.svg" alt=""></i>
-                  <i><img src="./svg/icon_star.svg" alt=""></i>
-                  <i><img src="./svg/icon_star.svg" alt=""></i>
-                  <i><img src="./svg/icon_star.svg" alt=""></i>
+                <div
+                  class="items__testimonial absolute inset-0 duration-700 ease-in-out"
+                  data-carousel-item
+                >
+                  <q class="items__testimonial my-6">
+                    <i
+                      >We believe in Burumah, because it gives us satisfaction
+                      for very satisfying results</i
+                    >
+                  </q>
+                  <div
+                    class="flex flex-col gap-5 2xl:mt-[104px] md:mt-[60px] sm:mt-[60px]"
+                  >
+                    <div class="flex flex-row gap-3">
+                      <figure>
+                        <img
+                          class="profile__picture rounded-full"
+                          src="./public/img/malePict1.png"
+                          alt="Team Member"
+                        />
+                      </figure>
+                      <div class="flex flex-col gap-1 text-start">
+                        <a>
+                          <b class="profile__name">Samsul Arifin</b>
+                        </a>
+                        <a href=""
+                          ><span class="profile__position">Client</span></a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="rating flex flex-row gap-2">
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="items__testimonial absolute inset-0 duration-700 ease-in-out"
+                  data-carousel-item
+                >
+                  <q class="items__testimonial my-6">
+                    <i
+                      >We believe in Burumah, because it gives us satisfaction
+                      for very satisfying results</i
+                    >
+                  </q>
+                  <div
+                    class="flex flex-col gap-5 2xl:mt-[104px] md:mt-[60px] sm:mt-[60px]"
+                  >
+                    <div class="flex flex-row gap-3">
+                      <figure>
+                        <img
+                          class="profile__picture rounded-full"
+                          src="./public/img/malePict1.png"
+                          alt="Team Member"
+                        />
+                      </figure>
+                      <div class="flex flex-col gap-1 text-start">
+                        <a>
+                          <b class="profile__name">Samsul Arifin</b>
+                        </a>
+                        <a href=""
+                          ><span class="profile__position">Client</span></a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="rating flex flex-row gap-2">
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="items__testimonial absolute inset-0 duration-700 ease-in-out"
+                  data-carousel-item
+                >
+                  <q class="items__testimonial my-6">
+                    <i
+                      >We believe in Burumah, because it gives us satisfaction
+                      for very satisfying results</i
+                    >
+                  </q>
+                  <div
+                    class="flex flex-col gap-5 2xl:mt-[104px] md:mt-[60px] sm:mt-[60px]"
+                  >
+                    <div class="flex flex-row gap-3">
+                      <figure>
+                        <img
+                          class="profile__picture rounded-full"
+                          src="./public/img/malePict1.png"
+                          alt="Team Member"
+                        />
+                      </figure>
+                      <div class="flex flex-col gap-1 text-start">
+                        <a>
+                          <b class="profile__name">Samsul Arifin</b>
+                        </a>
+                        <a href=""
+                          ><span class="profile__position">Client</span></a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="rating flex flex-row gap-2">
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="button__prev__next flex items-end">
-                <div class="flex items-center gap-4 relative">
-                  <button data-carousel-prev type="button" aria-label="Button for swipe to previous Testimonial"
-                    class="button__prev flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:px-6 sm:py-3 md:w-24 md:h-14">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                    </svg>                    
-                  </button>
-                  <p id="slide-number">01/03</p>
-                  <button data-carousel-next type="button" aria-label="Button for swipe to next Testimonial"
-                    class="button__next flex items-center justify-center border rounded-full  2xl:w-24 2xl:h-14 sm:px-6 sm:py-3 md:w-24 md:h-14">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                    </svg>                    
-                  </button>
+              <i
+                class="icon_testimonial absolute right-0 2xl:bottom-[170px] md:bottom-[170px] sm:bottom-[120px]"
+                ><img
+                  class="sm:w-14"
+                  src="./public/svg/quote.svg"
+                  alt="Quote icon for testimonial"
+              /></i>
+              <div
+                class="flex flex-row absolute right-0 2xl:bottom-[54px] md:bottom-[54px] sm:bottom-[54px] z-50"
+              >
+                <div class="button__prev__next flex items-end">
+                  <div class="flex items-center gap-4 relative">
+                    <button
+                      data-carousel-prev
+                      type="button"
+                      aria-label="Button for swipe to previous Testimonial"
+                      class="button-prev__testimonial flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:px-6 sm:py-3 md:w-24 md:h-14"
+                    >
+                      <svg
+                        class="group-hover:fill-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                        />
+                      </svg>
+                    </button>
+                    <p id="testimonialSlide">01/03</p>
+                    <button
+                      data-carousel-next
+                      type="button"
+                      aria-label="Button for swipe to next Testimonial"
+                      class="button-next__testimonial flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:px-6 sm:py-3 md:w-24 md:h-14"
+                    >
+                      <svg
+                        class="group-hover:fill-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- ________TESTIMONIAL END__________ -->
+      </section>
+      <!-- ________TESTIMONIAL END__________ -->
 
-    <!-- ________SLIDER FOOTER__________ -->
-    <section data-aos="fade-up" class="section__slider bg-black relative overflow-x-hidden mt-32">
-      <div class="slider-1 flex flex-row items-center 2xl:gap-3 sm:gap-4 md:gap-3 md py-6 text-white whitespace-nowrap">
-        <h3 class="sm:text-2xl md:text-5xl">PROPERTY</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">BUYUMAH</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">BEST</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">FAMILY</h3>
-      </div>
-
-      <div class="section__slider2nd slider-2 sm:top-0 md:top-0 flex flex-row items-center gap-3 2xl:gap-3 sm:gap-4 md:gap-6 py-6 text-white whitespace-nowrap">
-        <h3 class="sm:text-2xl md:text-5xl">PROPERTY</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">BUYUMAH</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">BEST</h3>
-        <i><img src="./svg/burumah_huge_logo.svg" alt="Burumah Big Logo Size For Slider"></i>
-        <h3 class="sm:text-2xl md:text-5xl">FAMILY</h3>
-      </div>
-    </section>
-    <!-- ________SLIDER FOOTER END__________ -->
-
-    <!-- ________FOOTER__________ -->
-    <footer data-aos="fade-up" class="section__footer container py-20 ">
-      <div class="flex gap-6 2xl:flex-row md:flex-row sm:flex-col sm:space-y-10">
-        <div class="about__footer md:w-1/3 2xl:w-1/3 flex flex-col gap-6 ">
-          <div class="main__logo__footer flex flex-row items-center gap-2 logo_burumah">
-            <img class="w-20" src="/svg/burumah_logo.svg" alt="">
-            <span class="font-bold text-4xl">Burumah</span>
-          </div>
-          <p class="description__footer" >
-            Burumah is a <b>property and real estate</b> agent that provides satisfaction
-            to clients who come from anywhere, and helps you get the property and
-            real estate of your dreams
-          </p>
+      <!-- ________SLIDER FOOTER__________ -->
+      <section
+        data-aos="fade-up"
+        class="section__slider bg-black relative overflow-x-hidden overflow-y-hidden mt-32"
+      >
+        <div
+          class="slider-1 flex flex-row items-center 2xl:gap-2 sm:gap-4 md:gap-3 md py-6 text-white whitespace-nowrap"
+        >
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">PROPERTY</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">BUYUMAH</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">BEST</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">FAMILY</span>
         </div>
 
-        <div class="md:w-1/3 2xl:w-1/3 flex flex-row sm:justify-between sm:mx-14 md:mx-0 2xl:mx-0">
-          <div class="list-footer__company md:w-1/2 flex-col">
-            <h4 class="title__company sm:text-2xl"><b>Company</b></h4>
-            <ul class="list__company flex flex-col mt-6 space-y-3">
-              <li class="item__list__company sm:text-xl"><a href="">How it work</a></li>
-              <li class="item__list__company sm:text-xl"><a href="">For team</a></li>
-              <li class="item__list__company sm:text-xl"><a href="">Category</a></li>
-            </ul>
-          </div>
-          <div class="list-footer__category 2xl:w-1/2 flex-col">
-            <h4 class="title__category sm:text-2xl"><b>Category</b></h4>
-            <ul class="list__category flex flex-col mt-6 space-y-3">
-              <li class="item__list__category sm:text-xl"><a href="">House Property</a></li>
-              <li class="item__list__category sm:text-xl"><a href="">Real Estate</a></li>
-              <li class="item__list__category sm:text-xl"><a href="">Apartment</a></li>
-            </ul>
-          </div>
-  
+        <div
+          class="section__slider2nd slider-2 sm:top-0 md:top-0 flex flex-row items-center gap-3 2xl:gap-3 sm:gap-4 md:gap-6 py-6 text-white whitespace-nowrap"
+        >
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">PROPERTY</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">BUYUMAH</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">BEST</span>
+          <i
+            ><img
+              src="./svg/burumah_huge_logo.svg"
+              alt="Burumah Big Logo Size For Slider"
+          /></i>
+          <span class="sm:text-2xl md:text-5xl 2xl:text-6xl">FAMILY</span>
         </div>
-        
-        <div class="md:w-1/3 2xl:w-1/3 flex flex-col gap-12 sm:text-center">
-          <h4 class="title__subscribe sm:text-2xl"><b>Subscribe to Follow</b></h4>
-          <div class="input-footer__subscribe flex flex-row sm:justify-between">
-            <input class="input__subscribe h-auto w-auto sm:w-3/5 rounded-full" type="email" placeholder="Your Email....">
-            <button aria-label="Button for subscribe to channel" class="bg__secondary rounded-full button__wide sm:text-xl 2xl:text-base">Subscribe</button>
+      </section>
+      <!-- ________SLIDER FOOTER END__________ -->
+
+      <!-- ________FOOTER__________ -->
+      <footer data-aos="fade-up" class="section__footer container py-20">
+        <div
+          class="flex gap-6 2xl:flex-row md:flex-row sm:flex-col sm:space-y-10"
+        >
+          <div class="about__footer md:w-1/3 2xl:w-1/3 flex flex-col gap-6">
+            <div
+              class="main__logo__footer flex flex-row items-center gap-2 logo_burumah"
+            >
+              <img class="w-20" src="/svg/burumah_logo.svg" alt="" />
+              <span class="font-bold text-4xl">Burumah</span>
+            </div>
+            <p class="description__footer">
+              Burumah is a <b>property and real estate</b> agent that provides
+              satisfaction to clients who come from anywhere, and helps you get
+              the property and real estate of your dreams
+            </p>
           </div>
-          <div class="socmed__footer flex flex-row sm:items-center sm:justify-around">
-            <a class="items__socmed__footer" href=""><img src="./svg/socmed/icon_twitter.svg" alt=""></a>
-            <a class="items__socmed__footer" href=""><img src="./svg/socmed/icon_instagram.svg" alt=""></a>
-            <a class="items__socmed__footer" href=""><img src="./svg/socmed/icon_whatsapp.svg" alt=""></a>
-            <a class="items__socmed__footer" href=""><img src="./svg/socmed/icon_linkedin.svg" alt=""></a>
+
+          <div
+            class="md:w-1/3 2xl:w-1/3 flex flex-row sm:justify-between sm:mx-14 md:mx-0 2xl:mx-0"
+          >
+            <div class="list-footer__company md:w-1/2 flex-col">
+              <h4 class="title__company sm:text-2xl"><b>Company</b></h4>
+              <ul class="list__company flex flex-col mt-6 space-y-3">
+                <li class="item__list__company sm:text-xl">
+                  <a href="">How it work</a>
+                </li>
+                <li class="item__list__company sm:text-xl">
+                  <a href="">For team</a>
+                </li>
+                <li class="item__list__company sm:text-xl">
+                  <a href="">Category</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list-footer__category 2xl:w-1/2 flex-col">
+              <h4 class="title__category sm:text-2xl"><b>Category</b></h4>
+              <ul class="list__category flex flex-col mt-6 space-y-3">
+                <li class="item__list__category sm:text-xl">
+                  <a href="">House Property</a>
+                </li>
+                <li class="item__list__category sm:text-xl">
+                  <a href="">Real Estate</a>
+                </li>
+                <li class="item__list__category sm:text-xl">
+                  <a href="">Apartment</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="md:w-1/3 2xl:w-1/3 flex flex-col gap-12 sm:text-center">
+            <h4 class="title__subscribe sm:text-2xl">
+              <b>Subscribe to Follow</b>
+            </h4>
+            <div
+              class="input-footer__subscribe flex flex-row sm:justify-between"
+            >
+              <input
+                class="input__subscribe h-auto w-auto sm:w-3/5 rounded-full"
+                type="email"
+                placeholder="Your Email...."
+              />
+              <button
+                aria-label="Button for subscribe to channel"
+                class="bg__secondary rounded-full button__wide sm:text-xl 2xl:text-base"
+              >
+                Subscribe
+              </button>
+            </div>
+            <div
+              class="socmed__footer flex flex-row sm:items-center sm:justify-around"
+            >
+              <a
+                class="items__socmed__footer group hover:bg-black h-14 w-14 border border-black rounded-full flex items-center justify-center"
+                href=""
+                ><svg
+                  class="group-hover:fill-white"
+                  width="20"
+                  height="17"
+                  viewBox="0 0 20 17"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 2.01242C19.2511 2.35943 18.4567 2.58721 17.6433 2.68818C18.4905 2.15705 19.1411 1.31598 19.4474 0.313858C18.642 0.813765 17.7608 1.16598 16.8419 1.35529C16.0934 0.521245 15.027 0 13.8468 0C11.5807 0 9.74344 1.92156 9.74344 4.29155C9.74344 4.62796 9.77977 4.95547 9.84969 5.26965C6.43953 5.09062 3.41609 3.38209 1.39227 0.785586C1.03914 1.41943 0.836797 2.15673 0.836797 2.94313C0.836797 4.4321 1.56125 5.74563 2.66219 6.51528C2.01059 6.49394 1.37332 6.30986 0.803594 5.97843C0.803359 5.99641 0.803359 6.01438 0.803359 6.03244C0.803359 8.11178 2.21773 9.84638 4.09477 10.2406C3.49054 10.4125 2.85674 10.4377 2.2418 10.3142C2.76391 12.0192 4.2793 13.2599 6.07477 13.2947C4.67047 14.4457 2.90117 15.1318 0.978828 15.1318C0.647578 15.1318 0.321016 15.1115 0 15.0718C1.81586 16.2895 3.97266 17 6.28984 17C13.8373 17 17.9644 10.4605 17.9644 4.78926C17.9644 4.60312 17.9605 4.41804 17.9525 4.23403C18.7558 3.62664 19.4492 2.87434 20 2.01242Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="items__socmed__footer group hover:bg-black h-14 w-14 border border-black rounded-full flex items-center justify-center"
+                href=""
+                ><svg
+                  class="group-hover:fill-white"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.999 7.37695C10.7726 7.37695 9.59651 7.86412 8.72934 8.73129C7.86217 9.59846 7.375 10.7746 7.375 12.001C7.375 13.2273 7.86217 14.4034 8.72934 15.2706C9.59651 16.1378 10.7726 16.625 11.999 16.625C13.2254 16.625 14.4015 16.1378 15.2687 15.2706C16.1358 14.4034 16.623 13.2273 16.623 12.001C16.623 10.7746 16.1358 9.59846 15.2687 8.73129C14.4015 7.86412 13.2254 7.37695 11.999 7.37695ZM11.999 15.004C11.2023 15.004 10.4382 14.6875 9.87485 14.1241C9.31149 13.5607 8.995 12.7967 8.995 12C8.995 11.2032 9.31149 10.4392 9.87485 9.8758C10.4382 9.31245 11.2023 8.99595 11.999 8.99595C12.7957 8.99595 13.5598 9.31245 14.1231 9.8758C14.6865 10.4392 15.003 11.2032 15.003 12C15.003 12.7967 14.6865 13.5607 14.1231 14.1241C13.5598 14.6875 12.7957 15.004 11.999 15.004Z"
+                  />
+                  <path
+                    d="M16.8046 8.28491C17.3999 8.28491 17.8826 7.80227 17.8826 7.20691C17.8826 6.61154 17.3999 6.12891 16.8046 6.12891C16.2092 6.12891 15.7266 6.61154 15.7266 7.20691C15.7266 7.80227 16.2092 8.28491 16.8046 8.28491Z"
+                  />
+                  <path
+                    d="M20.5349 6.10991C20.3034 5.51209 19.9496 4.96919 19.4962 4.51596C19.0428 4.06274 18.4998 3.70918 17.9019 3.47791C17.2022 3.21526 16.4631 3.07325 15.7159 3.05791C14.7529 3.01591 14.4479 3.00391 12.0059 3.00391C9.56391 3.00391 9.25091 3.00391 8.29591 3.05791C7.54929 3.07246 6.81066 3.21451 6.11191 3.47791C5.51384 3.70891 4.97067 4.06238 4.51724 4.51563C4.06381 4.96889 3.71013 5.51193 3.47891 6.10991C3.21621 6.80952 3.07452 7.54874 3.05991 8.29591C3.01691 9.25791 3.00391 9.56291 3.00391 12.0059C3.00391 14.4479 3.00391 14.7589 3.05991 15.7159C3.07491 16.4639 3.21591 17.2019 3.47891 17.9029C3.71078 18.5007 4.0648 19.0435 4.51834 19.4967C4.97188 19.9499 5.51497 20.3035 6.11291 20.5349C6.81034 20.8081 7.54928 20.9603 8.29791 20.9849C9.26091 21.0269 9.56591 21.0399 12.0079 21.0399C14.4499 21.0399 14.7629 21.0399 15.7179 20.9849C16.465 20.9697 17.2041 20.828 17.9039 20.5659C18.5017 20.3341 19.0445 19.9802 19.4979 19.5269C19.9512 19.0735 20.3051 18.5307 20.5369 17.9329C20.7999 17.2329 20.9409 16.4949 20.9559 15.7469C20.9989 14.7849 21.0119 14.4799 21.0119 12.0369C21.0119 9.59391 21.0119 9.28391 20.9559 8.32691C20.9443 7.56918 20.8018 6.81915 20.5349 6.10991ZM19.3169 15.6419C19.3105 16.2182 19.2053 16.7891 19.0059 17.3299C18.8557 17.7188 18.6258 18.0719 18.331 18.3666C18.0361 18.6613 17.6829 18.891 17.2939 19.0409C16.7591 19.2394 16.1943 19.3445 15.6239 19.3519C14.6739 19.3959 14.4059 19.4069 11.9699 19.4069C9.53191 19.4069 9.28291 19.4069 8.31491 19.3519C7.74483 19.3449 7.18023 19.2397 6.64591 19.0409C6.25559 18.8919 5.90091 18.6626 5.6048 18.3679C5.30868 18.0731 5.07774 17.7195 4.92691 17.3299C4.73035 16.795 4.62522 16.2307 4.61591 15.6609C4.57291 14.7109 4.56291 14.4429 4.56291 12.0069C4.56291 9.56991 4.56291 9.32091 4.61591 8.35191C4.62237 7.77593 4.72756 7.20533 4.92691 6.66491C5.23191 5.87591 5.85691 5.25491 6.64591 4.95291C7.1805 4.75505 7.74493 4.64987 8.31491 4.64191C9.26591 4.59891 9.53291 4.58691 11.9699 4.58691C14.4069 4.58691 14.6569 4.58691 15.6239 4.64191C16.1943 4.64877 16.7593 4.75398 17.2939 4.95291C17.6828 5.10318 18.036 5.33311 18.3309 5.62794C18.6257 5.92276 18.8556 6.27598 19.0059 6.66491C19.2025 7.19986 19.3076 7.76407 19.3169 8.33391C19.3599 9.28491 19.3709 9.55191 19.3709 11.9889C19.3709 14.4249 19.3709 14.6869 19.3279 15.6429H19.3169V15.6419Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="items__socmed__footer group hover:bg-black h-14 w-14 border border-black rounded-full flex items-center justify-center"
+                href=""
+                ><svg
+                  class="group-hover:fill-white"
+                  width="19"
+                  height="22"
+                  viewBox="0 0 19 22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1542 4.11836C14.3772 2.33711 12.0107 1.35742 9.49576 1.35742C4.30469 1.35742 0.0805804 5.58153 0.0805804 10.7726C0.0805804 12.4309 0.51317 14.0509 1.33594 15.4802L0 20.3574L4.99174 19.0469C6.36585 19.7976 7.91384 20.192 9.49152 20.192H9.49576C14.6826 20.192 19 15.9679 19 10.7768C19 8.26189 17.9312 5.89961 16.1542 4.11836ZM9.49576 18.6059C8.08772 18.6059 6.70937 18.2284 5.50915 17.5159L5.225 17.3463L2.26473 18.1224L3.05357 15.2342L2.86696 14.9373C2.08237 13.6905 1.67098 12.2527 1.67098 10.7726C1.67098 6.45943 5.18259 2.94782 9.5 2.94782C11.5908 2.94782 13.5545 3.76211 15.0304 5.24224C16.5062 6.72238 17.4138 8.68599 17.4096 10.7768C17.4096 15.0943 13.8089 18.6059 9.49576 18.6059ZM13.7877 12.7447C13.5545 12.6259 12.3967 12.0576 12.1804 11.9813C11.9641 11.9007 11.8071 11.8626 11.6502 12.1001C11.4933 12.3376 11.0437 12.8634 10.9038 13.0246C10.7681 13.1815 10.6281 13.2027 10.3949 13.084C9.01228 12.3927 8.10469 11.8498 7.19286 10.2849C6.95112 9.86925 7.4346 9.89894 7.88415 8.99983C7.96049 8.84291 7.92232 8.7072 7.86295 8.58845C7.80357 8.4697 7.33281 7.31189 7.13772 6.84113C6.94688 6.38309 6.75179 6.44671 6.60759 6.43823C6.47187 6.42974 6.31495 6.42974 6.15804 6.42974C6.00112 6.42974 5.74665 6.48912 5.53036 6.72238C5.31406 6.95988 4.70759 7.52818 4.70759 8.68599C4.70759 9.84381 5.55156 10.9634 5.66607 11.1204C5.78482 11.2773 7.32433 13.6523 9.68661 14.6744C11.1795 15.319 11.7647 15.3742 12.5112 15.2639C12.965 15.196 13.9022 14.6956 14.0973 14.1443C14.2924 13.5929 14.2924 13.1222 14.233 13.0246C14.1779 12.9186 14.021 12.8592 13.7877 12.7447Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="items__socmed__footer group hover:bg-black h-14 w-14 border border-black rounded-full flex items-center justify-center"
+                href=""
+                ><svg
+                  class="group-hover:fill-white"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.429 8.96876H13.143V10.8188C13.678 9.75476 15.05 8.79876 17.111 8.79876C21.062 8.79876 22 10.9168 22 14.8028V21.9998H18V15.6878C18 13.4748 17.465 12.2268 16.103 12.2268C14.214 12.2268 13.429 13.5718 13.429 15.6868V21.9998H9.429V8.96876ZM2.57 21.8298H6.57V8.79876H2.57V21.8298ZM7.143 4.54976C7.14315 4.88503 7.07666 5.21699 6.94739 5.52634C6.81812 5.8357 6.62865 6.11627 6.39 6.35176C5.9064 6.83238 5.25181 7.10141 4.57 7.09976C3.88939 7.0993 3.23631 6.83096 2.752 6.35276C2.51421 6.11647 2.32539 5.83558 2.19634 5.52619C2.0673 5.2168 2.00058 4.88498 2 4.54976C2 3.87276 2.27 3.22476 2.753 2.74676C3.23689 2.26791 3.89024 1.99946 4.571 1.99976C5.253 1.99976 5.907 2.26876 6.39 2.74676C6.872 3.22476 7.143 3.87276 7.143 4.54976Z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="section__copyright flex mt-8 2xl:flex-row md:flex-row sm:flex-col justify-between sm:space-y-6 sm:items-center">
-        <h4 class="text__copyright font-helvetica sm:text-[16px]">© 2024 mangcoding. All rights reserved.</h4>
-      </div>
-    </footer>
-    <!-- ________FOOTER END__________ -->
-    
-  </main>
+        <div
+          class="section__copyright flex mt-8 2xl:flex-row md:flex-row sm:flex-col justify-between sm:space-y-6 sm:items-center"
+        >
+          <span class="text__copyright font-helvetica sm:text-[16px]">
+            © 2024 mangcoding. All rights reserved.
+          </span>
+        </div>
+      </footer>
+      <!-- ________FOOTER END__________ -->
+    </main>
 
+    <script type="module" src="/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 
-  <script type="module" src="/main.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- ______________SWIPER SCRIPT START__________________ -->
+    <script>
+      // swiper element
+      const swiperEl = document.querySelector("swiper-container");
 
-<!-- ______________SWIPER SCRIPT START__________________ -->
-<script>
-  // swiper element
-const swiperEl = document.querySelector('swiper-container');
+      // swiper parameters
+      const swiperParams = {
+        slidesPerView: 1,
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 20,
+          },
+        },
+        on: {
+          init: function () {
+            updateSlideNumber();
+          },
+          slideChange: function () {
+            updateSlideNumber();
+          },
+        },
+      };
 
-// swiper parameters
-const swiperParams = {
-  slidesPerView: 1,
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-  },
-  on: {
-    init() {
-      // ...
-    },
-  },
-};
+      // now we need to assign all parameters to Swiper element
+      Object.assign(swiperEl, swiperParams);
 
-// now we need to assign all parameters to Swiper element
-Object.assign(swiperEl, swiperParams);
+      // and now initialize it
+      swiperEl.initialize();
 
-// and now initialize it
-swiperEl.initialize();
+      // Get navigation buttons
+      const prevButton = document.getElementById("button-prev");
+      const nextButton = document.getElementById("button-next");
+      const slideNumber = document.getElementById("slide-number");
+      let currentSlide = 1;
 
-// Get navigation buttons
-const prevButton = document.getElementById('button-prev');
-const nextButton = document.getElementById('button-next');
+      // Function to update slide number and button state
+      function updateSlideNumber() {
+        const totalSlides = swiperEl.swiper.slides.length;
+        const slidesPerGroup = swiperEl.swiper.params.slidesPerGroup; // Jumlah slide per grup
+        const totalSlideGroups = Math.ceil(totalSlides / slidesPerGroup); // Hitung total grup slide
 
-// Attach click events to custom buttons
-prevButton.addEventListener('click', () => {
-  swiperEl.swiper.slidePrev();
-});
+        slideNumber.textContent = `${String(currentSlide).padStart(2, "0")}/${String(totalSlideGroups).padStart(2, "0")}`;
 
-nextButton.addEventListener('click', () => {
-  swiperEl.swiper.slideNext();
-});
+        // Log the current slide and total slides
+        console.log(`Current Slide: ${currentSlide}`);
+        console.log(`Total Slides: ${totalSlides}`);
 
-// Function to update slide number
-function updateSlideNumber() {
-  const slideNumber = document.getElementById('slide-number');
-  const totalSlides = swiperEl.swiper.slides.length;
-  const currentSlide = swiperEl.swiper.realIndex + 1; // realIndex starts from 0
-  slideNumber.textContent = `${currentSlide}/${totalSlides}`;
-}
-</script>
-<!-- ______________SWIPER SCRIPT END__________________ -->
+        // Enable or disable navigation buttons
+        if (currentSlide === 1) {
+          prevButton.disabled = true;
+          prevButton.classList.add("disabled"); // Tambahkan class 'disabled'
+        } else {
+          prevButton.disabled = false;
+          prevButton.classList.remove("disabled"); // Hapus class 'disabled'
+        }
 
-<script>
-  AOS.init();
-</script>
+        if (currentSlide >= totalSlideGroups) {
+          nextButton.disabled = true;
+          nextButton.classList.add("disabled"); // Tambahkan class 'disabled'
+        } else {
+          nextButton.disabled = false;
+          nextButton.classList.remove("disabled"); // Hapus class 'disabled'
+        }
+      }
 
-</body>
+      // Attach click events to custom buttons
+      prevButton.addEventListener("click", () => {
+        if (currentSlide > 1) {
+          currentSlide--; // Decrease the slide number manually
+        }
+        swiperEl.swiper.slidePrev();
+        updateSlideNumber();
+      });
 
+      nextButton.addEventListener("click", () => {
+        const totalSlides = swiperEl.swiper.slides.length;
+        if (currentSlide < totalSlides) {
+          currentSlide++; // Increase the slide number manually
+        }
+        swiperEl.swiper.slideNext();
+        updateSlideNumber();
+      });
+
+      updateSlideNumber();
+    </script>
+    <!-- ______________SWIPER SCRIPT END__________________ -->
+
+    <!-- ______________AOS INIT________________ -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- ______________AOS END________________ -->
+  </body>
 </html>
