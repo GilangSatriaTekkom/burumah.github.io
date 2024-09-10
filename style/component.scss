@@ -10,7 +10,7 @@
   @apply bg-blue-500;
 }
 .bg__secondary {
-  @apply duration-200 scale-95 bg-emerald-300 hover:border-emerald-400 hover:border-2 hover:scale-100 active:scale-95;
+  @apply bg-emerald-300;
 }
 
 .border__primary {
@@ -53,7 +53,7 @@ a.main__logo {
 }
 
 li {
-  @apply scale-95;
+  @apply scale-100;
 
   &.active {
     @apply bg-emerald-300 font-bold;
@@ -65,7 +65,7 @@ li {
 }
 
 .btn__arrow {
-  @apply 2xl:h-14 2xl:w-16 md:h-14 md:w-16 sm:h-10 sm:w-10;
+  @apply 2xl:h-14 2xl:w-14 md:h-14 md:w-14 sm:h-10 sm:w-10;
 }
 
 .slider-1 {
@@ -113,7 +113,7 @@ li {
 }
 
 .button__wide {
-  @apply 2xl:py-1 2xl:px-5 sm:py-1 sm:px-6 md:px-6 md:py-1;
+  @apply 2xl:py-1 2xl:px-5 sm:py-1 sm:h-14 sm:px-6 md:px-6 md:py-1 hover:font-bold duration-200;
 }
 
 .arrow-button__card__property-category {
