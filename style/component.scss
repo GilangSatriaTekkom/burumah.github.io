@@ -105,7 +105,7 @@ li {
 }
 
 .socmed__item {
-  @apply scale-95 hover:scale-100 hover:fill-white;
+  @apply scale-95 hover:scale-100 hover:fill-white hover:bg-black;
 }
 
 .button__wide {
@@ -133,6 +133,28 @@ li {
 
 .profile__picture {
   @apply h-[48px] w-[48px];
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 @media screen and (min-width: 320px) {

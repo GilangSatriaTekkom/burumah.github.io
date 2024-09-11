@@ -12,6 +12,19 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Hamburger Menu
+document.getElementById("hamburger").addEventListener("click", function () {
+  const menu = document.getElementById("navbar-hamburger");
+  if (menu.style.right === "0px") {
+    menu.style.right = "-100%";
+    hamburgerIcon.classList.remove("open");
+  } else {
+    menu.style.right = "0px";
+    hamburgerIcon.classList.add("open");
+  }
+});
+// Hamburger menu end
+
 // Add active class to the current button (highlight it)
 document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll("#navActive li");
