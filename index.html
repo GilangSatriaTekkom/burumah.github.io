@@ -20,20 +20,16 @@
     <main id="app">
       <!-- ________HEADER__________ -->
 
-      <header
-        class="hero__section 2xl:container sm:container md:container pb-8 bg-heroBackground bg-cover"
-      >
+      <header class="hero__section container">
         <!-- ________Navigation________ -->
         <nav id="nav" class="header__navigation w-full left-0 z-50 fixed top-0">
           <div
             class="container flex flex-row items-center justify-between py-3"
           >
-            <a class="main__logo" href="">
-              <div class="flex flex-row gap-2 items-center">
-                <img src="/svg/burumah_logo.svg" alt="" />
-                <span class="font-bold">Burumah</span>
-              </div>
-            </a>
+            <div class="main__logo flex flex-row gap-2 items-center">
+              <a href=""><img src="/svg/burumah_logo.svg" alt="Main logo" /></a>
+              <span class="font-bold">Burumah</span>
+            </div>
             <ul
               id="navActive"
               class="navigation__list sm:hidden md:flex 2xl:flex flex-row gap border border__primary rounded-full p-2 bg-white"
@@ -68,11 +64,15 @@
               class="sm:hidden md:block button__registration group/registration"
             >
               <div class="flex flex-row items-center">
-                <button class="button__wide bg__secondary rounded-full">
+                <button
+                  class="button__wide bg__secondary rounded-full"
+                  aria-label="Button For Access Registration Page"
+                >
                   <a href="">Registration Now</a>
                 </button>
                 <button
                   class="border border__secondary group-hover/registration:rotate-45 duration-200 flex place-content-center items-center btn__arrow rounded-full bg-white"
+                  aria-label="Button arrow animation"
                 >
                   <a href=""
                     ><img
@@ -144,11 +144,15 @@
                   <div
                     class="button__registration group/registration flex flex-row items-center"
                   >
-                    <button class="button__wide bg__secondary rounded-full">
+                    <button
+                      class="button__wide bg__secondary rounded-full"
+                      aria-label="Button arrow animation"
+                    >
                       <a href="">Registration Now</a>
                     </button>
                     <button
                       class="border border__secondary group-hover/registration:rotate-45 duration-200 flex place-content-center items-center btn__arrow rounded-full bg-white"
+                      aria-label="Button arrow animation"
                     >
                       <a href=""
                         ><img
@@ -164,187 +168,197 @@
           </div>
         </nav>
         <!-- ________Navigation END________ -->
-        <section id="hero" class="mt-[115px] body relative">
-          <div
-            class="aside__caption__hero flex 2xl:flex-row md:flex-row sm:flex-col sm:text-center sm:gap-12 left-32 w-full 2xl:gap-12 md:gap-12"
+      </header>
+      <!-- ________HEADER END__________ -->
+
+      <!-- ________HERO__________ -->
+      <section
+        id="hero"
+        class="mt-[115px] body container pb-8 bg-heroBackground bg-cover relative"
+      >
+        <div
+          class="aside__caption__hero flex 2xl:flex-row md:flex-row sm:flex-col sm:text-center sm:gap-12 left-32 w-full 2xl:gap-12 md:gap-12"
+        >
+          <span
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-offset="200"
+            class="md:text-start"
           >
-            <span
+            Smartproperty <br class="sm:hidden md:block 2xl:block" />
+            Invesment
+          </span>
+          <div
+            class="flex flex-col sm:items-center sm:gap-12 sm:w-full 2xl:items-start 2xl:gap-6 md:gap-6 md:items-start md:justify-start md:w-3/4"
+          >
+            <div
+              class="main__title flex flex-col sm:gap-2 2xl:text-start whitespace-nowrap"
+            >
+              <h1
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-offset="200"
+                class="sm:text-5xl md:text-7xl lg:text-8xl 2xl:text-8xl md:text-start"
+              >
+                BEST PROPERTY
+              </h1>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-offset="200"
+                class="flex 2xl:flex-row sm:flex-col md:flex-row gap-2 items-center sm:items-center sm:justify-center"
+              >
+                <h2 class="sm:text-5xl md:text-7xl lg:text-8xl 2xl:text-8xl">
+                  FOR FAMILY
+                </h2>
+                <img
+                  class="rounded-full w-auto 2xl:h-24 sm:h-28 md:h-24"
+                  src="./public/img/title-pict.png"
+                  alt="Title Picture"
+                />
+              </div>
+            </div>
+
+            <p
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-offset="200"
-              class="md:text-start"
+              class="hero__description sm:text-center md:text-justify sm:text-md"
             >
-              Smartproperty <br class="sm:hidden md:block 2xl:block" />
-              Invesment
-            </span>
+              Are you looking for property and real estate that is responsible,
+              very reliable and has a modern house style, you have come to the
+              right person, look for your dream house and order it from us
+              without difficulty in transactions
+            </p>
             <div
-              class="flex flex-col sm:items-center sm:gap-12 sm:w-full 2xl:items-start 2xl:gap-6 md:gap-6 md:items-start md:justify-start md:w-3/4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-offset="200"
+              class="get-started__button group/wideButton flex flex-row relative items-center"
             >
-              <div
-                class="main__title flex flex-col sm:gap-2 2xl:text-start whitespace-nowrap"
+              <button
+                aria-label="Button For Access Registration Page"
+                class="bg-white button__wide border z-30 border__secondary rounded-full text-xl"
               >
-                <h1
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-offset="200"
-                  class="sm:text-5xl md:text-7xl lg:text-8xl 2xl:text-8xl md:text-start"
-                >
-                  BEST PROPERTY
-                </h1>
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-offset="200"
-                  class="flex 2xl:flex-row sm:flex-col md:flex-row gap-2 items-center sm:items-center sm:justify-center"
-                >
-                  <h2 class="sm:text-5xl md:text-7xl lg:text-8xl 2xl:text-8xl">
-                    FOR FAMILY
-                  </h2>
-                  <img
-                    class="rounded-full w-auto 2xl:h-24 sm:h-28 md:h-24"
-                    src="./public/img/title-pict.png"
-                    alt="Title Picture"
-                  />
-                </div>
-              </div>
+                <a href="">Get Started Now</a>
+              </button>
 
-              <p
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-offset="200"
-                class="hero__description sm:text-center md:text-justify sm:text-md"
+              <button
+                aria-label="Button arrow animation"
+                class="arrow__wide group-hover/wideButton:rotate-45 bg__secondary duration-200 z-10 rounded-full flex place-content-center items-center btn__arrow"
               >
-                Are you looking for property and real estate that is
-                responsible, very reliable and has a modern house style, you
-                have come to the right person, look for your dream house and
-                order it from us without difficulty in transactions
-              </p>
-              <div
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-offset="200"
-                class="get-started__button group/wideButton flex flex-row relative items-center"
-              >
-                <button
-                  aria-label="Button For Access Registration Page"
-                  class="bg-white button__wide border z-30 border__secondary rounded-full text-xl"
-                >
-                  <a href="">Get Started Now</a>
-                </button>
-
-                <button
-                  class="arrow__wide group-hover/wideButton:rotate-45 bg__secondary duration-200 z-10 rounded-full flex place-content-center items-center btn__arrow"
-                >
-                  <a href=""
-                    ><img
-                      class="w-3 h-3 group-hover/wideButton:w-5 group-hover/wideButton:h-5"
-                      src="./svg/arrow-up-right.svg"
-                      alt="Arrow Up Right"
-                  /></a>
-                </button>
-              </div>
+                <a href=""
+                  ><img
+                    class="w-3 h-3 group-hover/wideButton:w-5 group-hover/wideButton:h-5"
+                    src="./svg/arrow-up-right.svg"
+                    alt="Arrow Up Right"
+                /></a>
+              </button>
             </div>
           </div>
+        </div>
 
-          <div
-            class="review__hero flex 2xl:flex-row sm:flex-col md:flex-row sm:mt-20 sm:gap-5 justify-between items-center"
-          >
-            <div class="flex w-auto h-auto flex-row gap-3">
-              <img
-                class="picture__group sm:h-10 sm:w-auto md:h-10 md:w-auto"
-                src="./public/img/profile_group.png"
-                alt=""
-              />
-              <div class="rating flex flex-row gap-1 items-center">
-                <i
-                  ><img class="sm:w-5 sm:h-5" src="./svg/icon_star.svg" alt=""
-                /></i>
-                <p>(4.5 Star)</p>
-              </div>
-            </div>
+        <div
+          class="review__hero flex 2xl:flex-row sm:flex-col md:flex-row sm:mt-20 sm:gap-5 justify-between items-center"
+        >
+          <div class="flex w-auto h-auto flex-row gap-3">
             <img
-              class="button-group__picture 2xl:w-auto 2xl:h-auto sm:w-52 sm:self-end md:w-auto md:h-28"
-              src="./public/img/btn-group.png"
-              alt="Hero Image"
+              class="picture__group sm:h-10 sm:w-auto md:h-10 md:w-auto"
+              src="./public/img/profile_group.png"
+              alt="Profile Group"
             />
+            <div class="rating flex flex-row gap-1 items-center">
+              <i
+                ><img
+                  class="sm:w-5 sm:h-5"
+                  src="./svg/icon_star.svg"
+                  alt="Star Icon"
+              /></i>
+              <p>(4.5 Star)</p>
+            </div>
           </div>
+          <img
+            class="button-group__picture 2xl:w-auto 2xl:h-auto sm:w-52 sm:self-end md:w-auto md:h-28"
+            src="./public/img/btn-group.png"
+            alt="Hero Image"
+          />
+        </div>
 
-          <aside
-            data-aos="fade-left"
-            class="aside__socmed__hero container sm:hidden md:block 2xl:block flex p-5 absolute w-auto md:top-32 2xl:top-32 right-0 flex-col space-y-4"
-          >
-            <a
-              class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
-              href=""
-              ><svg
-                class="group-hover:fill-white"
-                width="20"
-                height="17"
-                viewBox="0 0 20 17"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20 2.01242C19.2511 2.35943 18.4567 2.58721 17.6433 2.68818C18.4905 2.15705 19.1411 1.31598 19.4474 0.313858C18.642 0.813765 17.7608 1.16598 16.8419 1.35529C16.0934 0.521245 15.027 0 13.8468 0C11.5807 0 9.74344 1.92156 9.74344 4.29155C9.74344 4.62796 9.77977 4.95547 9.84969 5.26965C6.43953 5.09062 3.41609 3.38209 1.39227 0.785586C1.03914 1.41943 0.836797 2.15673 0.836797 2.94313C0.836797 4.4321 1.56125 5.74563 2.66219 6.51528C2.01059 6.49394 1.37332 6.30986 0.803594 5.97843C0.803359 5.99641 0.803359 6.01438 0.803359 6.03244C0.803359 8.11178 2.21773 9.84638 4.09477 10.2406C3.49054 10.4125 2.85674 10.4377 2.2418 10.3142C2.76391 12.0192 4.2793 13.2599 6.07477 13.2947C4.67047 14.4457 2.90117 15.1318 0.978828 15.1318C0.647578 15.1318 0.321016 15.1115 0 15.0718C1.81586 16.2895 3.97266 17 6.28984 17C13.8373 17 17.9644 10.4605 17.9644 4.78926C17.9644 4.60312 17.9605 4.41804 17.9525 4.23403C18.7558 3.62664 19.4492 2.87434 20 2.01242Z"
-                />
-              </svg>
-            </a>
-            <a
-              class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
-              href=""
-              ><svg
-                class="group-hover:fill-white"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.999 7.37695C10.7726 7.37695 9.59651 7.86412 8.72934 8.73129C7.86217 9.59846 7.375 10.7746 7.375 12.001C7.375 13.2273 7.86217 14.4034 8.72934 15.2706C9.59651 16.1378 10.7726 16.625 11.999 16.625C13.2254 16.625 14.4015 16.1378 15.2687 15.2706C16.1358 14.4034 16.623 13.2273 16.623 12.001C16.623 10.7746 16.1358 9.59846 15.2687 8.73129C14.4015 7.86412 13.2254 7.37695 11.999 7.37695ZM11.999 15.004C11.2023 15.004 10.4382 14.6875 9.87485 14.1241C9.31149 13.5607 8.995 12.7967 8.995 12C8.995 11.2032 9.31149 10.4392 9.87485 9.8758C10.4382 9.31245 11.2023 8.99595 11.999 8.99595C12.7957 8.99595 13.5598 9.31245 14.1231 9.8758C14.6865 10.4392 15.003 11.2032 15.003 12C15.003 12.7967 14.6865 13.5607 14.1231 14.1241C13.5598 14.6875 12.7957 15.004 11.999 15.004Z"
-                />
-                <path
-                  d="M16.8046 8.28491C17.3999 8.28491 17.8826 7.80227 17.8826 7.20691C17.8826 6.61154 17.3999 6.12891 16.8046 6.12891C16.2092 6.12891 15.7266 6.61154 15.7266 7.20691C15.7266 7.80227 16.2092 8.28491 16.8046 8.28491Z"
-                />
-                <path
-                  d="M20.5349 6.10991C20.3034 5.51209 19.9496 4.96919 19.4962 4.51596C19.0428 4.06274 18.4998 3.70918 17.9019 3.47791C17.2022 3.21526 16.4631 3.07325 15.7159 3.05791C14.7529 3.01591 14.4479 3.00391 12.0059 3.00391C9.56391 3.00391 9.25091 3.00391 8.29591 3.05791C7.54929 3.07246 6.81066 3.21451 6.11191 3.47791C5.51384 3.70891 4.97067 4.06238 4.51724 4.51563C4.06381 4.96889 3.71013 5.51193 3.47891 6.10991C3.21621 6.80952 3.07452 7.54874 3.05991 8.29591C3.01691 9.25791 3.00391 9.56291 3.00391 12.0059C3.00391 14.4479 3.00391 14.7589 3.05991 15.7159C3.07491 16.4639 3.21591 17.2019 3.47891 17.9029C3.71078 18.5007 4.0648 19.0435 4.51834 19.4967C4.97188 19.9499 5.51497 20.3035 6.11291 20.5349C6.81034 20.8081 7.54928 20.9603 8.29791 20.9849C9.26091 21.0269 9.56591 21.0399 12.0079 21.0399C14.4499 21.0399 14.7629 21.0399 15.7179 20.9849C16.465 20.9697 17.2041 20.828 17.9039 20.5659C18.5017 20.3341 19.0445 19.9802 19.4979 19.5269C19.9512 19.0735 20.3051 18.5307 20.5369 17.9329C20.7999 17.2329 20.9409 16.4949 20.9559 15.7469C20.9989 14.7849 21.0119 14.4799 21.0119 12.0369C21.0119 9.59391 21.0119 9.28391 20.9559 8.32691C20.9443 7.56918 20.8018 6.81915 20.5349 6.10991ZM19.3169 15.6419C19.3105 16.2182 19.2053 16.7891 19.0059 17.3299C18.8557 17.7188 18.6258 18.0719 18.331 18.3666C18.0361 18.6613 17.6829 18.891 17.2939 19.0409C16.7591 19.2394 16.1943 19.3445 15.6239 19.3519C14.6739 19.3959 14.4059 19.4069 11.9699 19.4069C9.53191 19.4069 9.28291 19.4069 8.31491 19.3519C7.74483 19.3449 7.18023 19.2397 6.64591 19.0409C6.25559 18.8919 5.90091 18.6626 5.6048 18.3679C5.30868 18.0731 5.07774 17.7195 4.92691 17.3299C4.73035 16.795 4.62522 16.2307 4.61591 15.6609C4.57291 14.7109 4.56291 14.4429 4.56291 12.0069C4.56291 9.56991 4.56291 9.32091 4.61591 8.35191C4.62237 7.77593 4.72756 7.20533 4.92691 6.66491C5.23191 5.87591 5.85691 5.25491 6.64591 4.95291C7.1805 4.75505 7.74493 4.64987 8.31491 4.64191C9.26591 4.59891 9.53291 4.58691 11.9699 4.58691C14.4069 4.58691 14.6569 4.58691 15.6239 4.64191C16.1943 4.64877 16.7593 4.75398 17.2939 4.95291C17.6828 5.10318 18.036 5.33311 18.3309 5.62794C18.6257 5.92276 18.8556 6.27598 19.0059 6.66491C19.2025 7.19986 19.3076 7.76407 19.3169 8.33391C19.3599 9.28491 19.3709 9.55191 19.3709 11.9889C19.3709 14.4249 19.3709 14.6869 19.3279 15.6429H19.3169V15.6419Z"
-                />
-              </svg>
-            </a>
-            <a
-              class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
-              href=""
-              ><svg
-                class="group-hover:fill-white"
-                width="19"
-                height="22"
-                viewBox="0 0 19 22"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.1542 4.11836C14.3772 2.33711 12.0107 1.35742 9.49576 1.35742C4.30469 1.35742 0.0805804 5.58153 0.0805804 10.7726C0.0805804 12.4309 0.51317 14.0509 1.33594 15.4802L0 20.3574L4.99174 19.0469C6.36585 19.7976 7.91384 20.192 9.49152 20.192H9.49576C14.6826 20.192 19 15.9679 19 10.7768C19 8.26189 17.9312 5.89961 16.1542 4.11836ZM9.49576 18.6059C8.08772 18.6059 6.70937 18.2284 5.50915 17.5159L5.225 17.3463L2.26473 18.1224L3.05357 15.2342L2.86696 14.9373C2.08237 13.6905 1.67098 12.2527 1.67098 10.7726C1.67098 6.45943 5.18259 2.94782 9.5 2.94782C11.5908 2.94782 13.5545 3.76211 15.0304 5.24224C16.5062 6.72238 17.4138 8.68599 17.4096 10.7768C17.4096 15.0943 13.8089 18.6059 9.49576 18.6059ZM13.7877 12.7447C13.5545 12.6259 12.3967 12.0576 12.1804 11.9813C11.9641 11.9007 11.8071 11.8626 11.6502 12.1001C11.4933 12.3376 11.0437 12.8634 10.9038 13.0246C10.7681 13.1815 10.6281 13.2027 10.3949 13.084C9.01228 12.3927 8.10469 11.8498 7.19286 10.2849C6.95112 9.86925 7.4346 9.89894 7.88415 8.99983C7.96049 8.84291 7.92232 8.7072 7.86295 8.58845C7.80357 8.4697 7.33281 7.31189 7.13772 6.84113C6.94688 6.38309 6.75179 6.44671 6.60759 6.43823C6.47187 6.42974 6.31495 6.42974 6.15804 6.42974C6.00112 6.42974 5.74665 6.48912 5.53036 6.72238C5.31406 6.95988 4.70759 7.52818 4.70759 8.68599C4.70759 9.84381 5.55156 10.9634 5.66607 11.1204C5.78482 11.2773 7.32433 13.6523 9.68661 14.6744C11.1795 15.319 11.7647 15.3742 12.5112 15.2639C12.965 15.196 13.9022 14.6956 14.0973 14.1443C14.2924 13.5929 14.2924 13.1222 14.233 13.0246C14.1779 12.9186 14.021 12.8592 13.7877 12.7447Z"
-                />
-              </svg>
-            </a>
-            <a
-              class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
-              href=""
-              ><svg
-                class="group-hover:fill-white"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M9.429 8.96876H13.143V10.8188C13.678 9.75476 15.05 8.79876 17.111 8.79876C21.062 8.79876 22 10.9168 22 14.8028V21.9998H18V15.6878C18 13.4748 17.465 12.2268 16.103 12.2268C14.214 12.2268 13.429 13.5718 13.429 15.6868V21.9998H9.429V8.96876ZM2.57 21.8298H6.57V8.79876H2.57V21.8298ZM7.143 4.54976C7.14315 4.88503 7.07666 5.21699 6.94739 5.52634C6.81812 5.8357 6.62865 6.11627 6.39 6.35176C5.9064 6.83238 5.25181 7.10141 4.57 7.09976C3.88939 7.0993 3.23631 6.83096 2.752 6.35276C2.51421 6.11647 2.32539 5.83558 2.19634 5.52619C2.0673 5.2168 2.00058 4.88498 2 4.54976C2 3.87276 2.27 3.22476 2.753 2.74676C3.23689 2.26791 3.89024 1.99946 4.571 1.99976C5.253 1.99976 5.907 2.26876 6.39 2.74676C6.872 3.22476 7.143 3.87276 7.143 4.54976Z"
-                />
-              </svg>
-            </a>
-          </aside>
-        </section>
-      </header>
-      <!-- ________HEADER END__________ -->
+        <aside
+          data-aos="fade-left"
+          class="aside__socmed__hero container right-0 sm:hidden md:block 2xl:block flex w-auto md:top-32 2xl:top-32 flex-col space-y-4 absolute"
+        >
+          <a
+            class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
+            href=""
+            ><svg
+              class="group-hover:fill-white"
+              width="20"
+              height="17"
+              viewBox="0 0 20 17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 2.01242C19.2511 2.35943 18.4567 2.58721 17.6433 2.68818C18.4905 2.15705 19.1411 1.31598 19.4474 0.313858C18.642 0.813765 17.7608 1.16598 16.8419 1.35529C16.0934 0.521245 15.027 0 13.8468 0C11.5807 0 9.74344 1.92156 9.74344 4.29155C9.74344 4.62796 9.77977 4.95547 9.84969 5.26965C6.43953 5.09062 3.41609 3.38209 1.39227 0.785586C1.03914 1.41943 0.836797 2.15673 0.836797 2.94313C0.836797 4.4321 1.56125 5.74563 2.66219 6.51528C2.01059 6.49394 1.37332 6.30986 0.803594 5.97843C0.803359 5.99641 0.803359 6.01438 0.803359 6.03244C0.803359 8.11178 2.21773 9.84638 4.09477 10.2406C3.49054 10.4125 2.85674 10.4377 2.2418 10.3142C2.76391 12.0192 4.2793 13.2599 6.07477 13.2947C4.67047 14.4457 2.90117 15.1318 0.978828 15.1318C0.647578 15.1318 0.321016 15.1115 0 15.0718C1.81586 16.2895 3.97266 17 6.28984 17C13.8373 17 17.9644 10.4605 17.9644 4.78926C17.9644 4.60312 17.9605 4.41804 17.9525 4.23403C18.7558 3.62664 19.4492 2.87434 20 2.01242Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
+            href=""
+            ><svg
+              class="group-hover:fill-white"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.999 7.37695C10.7726 7.37695 9.59651 7.86412 8.72934 8.73129C7.86217 9.59846 7.375 10.7746 7.375 12.001C7.375 13.2273 7.86217 14.4034 8.72934 15.2706C9.59651 16.1378 10.7726 16.625 11.999 16.625C13.2254 16.625 14.4015 16.1378 15.2687 15.2706C16.1358 14.4034 16.623 13.2273 16.623 12.001C16.623 10.7746 16.1358 9.59846 15.2687 8.73129C14.4015 7.86412 13.2254 7.37695 11.999 7.37695ZM11.999 15.004C11.2023 15.004 10.4382 14.6875 9.87485 14.1241C9.31149 13.5607 8.995 12.7967 8.995 12C8.995 11.2032 9.31149 10.4392 9.87485 9.8758C10.4382 9.31245 11.2023 8.99595 11.999 8.99595C12.7957 8.99595 13.5598 9.31245 14.1231 9.8758C14.6865 10.4392 15.003 11.2032 15.003 12C15.003 12.7967 14.6865 13.5607 14.1231 14.1241C13.5598 14.6875 12.7957 15.004 11.999 15.004Z"
+              />
+              <path
+                d="M16.8046 8.28491C17.3999 8.28491 17.8826 7.80227 17.8826 7.20691C17.8826 6.61154 17.3999 6.12891 16.8046 6.12891C16.2092 6.12891 15.7266 6.61154 15.7266 7.20691C15.7266 7.80227 16.2092 8.28491 16.8046 8.28491Z"
+              />
+              <path
+                d="M20.5349 6.10991C20.3034 5.51209 19.9496 4.96919 19.4962 4.51596C19.0428 4.06274 18.4998 3.70918 17.9019 3.47791C17.2022 3.21526 16.4631 3.07325 15.7159 3.05791C14.7529 3.01591 14.4479 3.00391 12.0059 3.00391C9.56391 3.00391 9.25091 3.00391 8.29591 3.05791C7.54929 3.07246 6.81066 3.21451 6.11191 3.47791C5.51384 3.70891 4.97067 4.06238 4.51724 4.51563C4.06381 4.96889 3.71013 5.51193 3.47891 6.10991C3.21621 6.80952 3.07452 7.54874 3.05991 8.29591C3.01691 9.25791 3.00391 9.56291 3.00391 12.0059C3.00391 14.4479 3.00391 14.7589 3.05991 15.7159C3.07491 16.4639 3.21591 17.2019 3.47891 17.9029C3.71078 18.5007 4.0648 19.0435 4.51834 19.4967C4.97188 19.9499 5.51497 20.3035 6.11291 20.5349C6.81034 20.8081 7.54928 20.9603 8.29791 20.9849C9.26091 21.0269 9.56591 21.0399 12.0079 21.0399C14.4499 21.0399 14.7629 21.0399 15.7179 20.9849C16.465 20.9697 17.2041 20.828 17.9039 20.5659C18.5017 20.3341 19.0445 19.9802 19.4979 19.5269C19.9512 19.0735 20.3051 18.5307 20.5369 17.9329C20.7999 17.2329 20.9409 16.4949 20.9559 15.7469C20.9989 14.7849 21.0119 14.4799 21.0119 12.0369C21.0119 9.59391 21.0119 9.28391 20.9559 8.32691C20.9443 7.56918 20.8018 6.81915 20.5349 6.10991ZM19.3169 15.6419C19.3105 16.2182 19.2053 16.7891 19.0059 17.3299C18.8557 17.7188 18.6258 18.0719 18.331 18.3666C18.0361 18.6613 17.6829 18.891 17.2939 19.0409C16.7591 19.2394 16.1943 19.3445 15.6239 19.3519C14.6739 19.3959 14.4059 19.4069 11.9699 19.4069C9.53191 19.4069 9.28291 19.4069 8.31491 19.3519C7.74483 19.3449 7.18023 19.2397 6.64591 19.0409C6.25559 18.8919 5.90091 18.6626 5.6048 18.3679C5.30868 18.0731 5.07774 17.7195 4.92691 17.3299C4.73035 16.795 4.62522 16.2307 4.61591 15.6609C4.57291 14.7109 4.56291 14.4429 4.56291 12.0069C4.56291 9.56991 4.56291 9.32091 4.61591 8.35191C4.62237 7.77593 4.72756 7.20533 4.92691 6.66491C5.23191 5.87591 5.85691 5.25491 6.64591 4.95291C7.1805 4.75505 7.74493 4.64987 8.31491 4.64191C9.26591 4.59891 9.53291 4.58691 11.9699 4.58691C14.4069 4.58691 14.6569 4.58691 15.6239 4.64191C16.1943 4.64877 16.7593 4.75398 17.2939 4.95291C17.6828 5.10318 18.036 5.33311 18.3309 5.62794C18.6257 5.92276 18.8556 6.27598 19.0059 6.66491C19.2025 7.19986 19.3076 7.76407 19.3169 8.33391C19.3599 9.28491 19.3709 9.55191 19.3709 11.9889C19.3709 14.4249 19.3709 14.6869 19.3279 15.6429H19.3169V15.6419Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
+            href=""
+            ><svg
+              class="group-hover:fill-white"
+              width="19"
+              height="22"
+              viewBox="0 0 19 22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.1542 4.11836C14.3772 2.33711 12.0107 1.35742 9.49576 1.35742C4.30469 1.35742 0.0805804 5.58153 0.0805804 10.7726C0.0805804 12.4309 0.51317 14.0509 1.33594 15.4802L0 20.3574L4.99174 19.0469C6.36585 19.7976 7.91384 20.192 9.49152 20.192H9.49576C14.6826 20.192 19 15.9679 19 10.7768C19 8.26189 17.9312 5.89961 16.1542 4.11836ZM9.49576 18.6059C8.08772 18.6059 6.70937 18.2284 5.50915 17.5159L5.225 17.3463L2.26473 18.1224L3.05357 15.2342L2.86696 14.9373C2.08237 13.6905 1.67098 12.2527 1.67098 10.7726C1.67098 6.45943 5.18259 2.94782 9.5 2.94782C11.5908 2.94782 13.5545 3.76211 15.0304 5.24224C16.5062 6.72238 17.4138 8.68599 17.4096 10.7768C17.4096 15.0943 13.8089 18.6059 9.49576 18.6059ZM13.7877 12.7447C13.5545 12.6259 12.3967 12.0576 12.1804 11.9813C11.9641 11.9007 11.8071 11.8626 11.6502 12.1001C11.4933 12.3376 11.0437 12.8634 10.9038 13.0246C10.7681 13.1815 10.6281 13.2027 10.3949 13.084C9.01228 12.3927 8.10469 11.8498 7.19286 10.2849C6.95112 9.86925 7.4346 9.89894 7.88415 8.99983C7.96049 8.84291 7.92232 8.7072 7.86295 8.58845C7.80357 8.4697 7.33281 7.31189 7.13772 6.84113C6.94688 6.38309 6.75179 6.44671 6.60759 6.43823C6.47187 6.42974 6.31495 6.42974 6.15804 6.42974C6.00112 6.42974 5.74665 6.48912 5.53036 6.72238C5.31406 6.95988 4.70759 7.52818 4.70759 8.68599C4.70759 9.84381 5.55156 10.9634 5.66607 11.1204C5.78482 11.2773 7.32433 13.6523 9.68661 14.6744C11.1795 15.319 11.7647 15.3742 12.5112 15.2639C12.965 15.196 13.9022 14.6956 14.0973 14.1443C14.2924 13.5929 14.2924 13.1222 14.233 13.0246C14.1779 12.9186 14.021 12.8592 13.7877 12.7447Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
+            href=""
+            ><svg
+              class="group-hover:fill-white"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.429 8.96876H13.143V10.8188C13.678 9.75476 15.05 8.79876 17.111 8.79876C21.062 8.79876 22 10.9168 22 14.8028V21.9998H18V15.6878C18 13.4748 17.465 12.2268 16.103 12.2268C14.214 12.2268 13.429 13.5718 13.429 15.6868V21.9998H9.429V8.96876ZM2.57 21.8298H6.57V8.79876H2.57V21.8298ZM7.143 4.54976C7.14315 4.88503 7.07666 5.21699 6.94739 5.52634C6.81812 5.8357 6.62865 6.11627 6.39 6.35176C5.9064 6.83238 5.25181 7.10141 4.57 7.09976C3.88939 7.0993 3.23631 6.83096 2.752 6.35276C2.51421 6.11647 2.32539 5.83558 2.19634 5.52619C2.0673 5.2168 2.00058 4.88498 2 4.54976C2 3.87276 2.27 3.22476 2.753 2.74676C3.23689 2.26791 3.89024 1.99946 4.571 1.99976C5.253 1.99976 5.907 2.26876 6.39 2.74676C6.872 3.22476 7.143 3.87276 7.143 4.54976Z"
+              />
+            </svg>
+          </a>
+        </aside>
+      </section>
+      <!-- ________HERO END__________ -->
 
       <!-- ________SLIDER__________ -->
       <section
@@ -419,7 +433,7 @@
             <img
               class="2xl:float-left md:float-left sm:w-96 md:h-36"
               src="./public/img/house1.png"
-              alt=""
+              alt="House image"
             />
             <p
               class="description__section__about-us sm:text-justify md:hidden 2xl:hidden"
@@ -569,6 +583,7 @@
                   </button>
                   <button
                     class="button-arrow__registration group-hover/registration__our-team:rotate-45 duration-200 border border__secondary flex place-content-center items-center btn__arrow rounded-full"
+                    aria-label="Button arrow animation"
                   >
                     <a href=""
                       ><img
@@ -665,6 +680,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -673,7 +689,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/img1.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -701,6 +717,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -709,7 +726,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/img2.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -737,6 +754,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -745,7 +763,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/img3.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -773,6 +791,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -781,7 +800,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/img1.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -809,6 +828,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -817,7 +837,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/img1.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -845,6 +865,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -853,7 +874,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/img2.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -881,6 +902,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -889,7 +911,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/img3.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -917,6 +939,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -925,7 +948,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/img1.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -1043,6 +1066,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -1051,7 +1075,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/imgWide1.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -1082,6 +1106,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -1090,7 +1115,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/imgSquare1.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -1121,6 +1146,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -1129,7 +1155,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/imgSquare2.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -1158,6 +1184,7 @@
               >
                 <button
                   class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+                  aria-label="Button arrow animation"
                 >
                   <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
                 </button>
@@ -1166,7 +1193,7 @@
                 <img
                   class="card__bg bg-img1 rounded-3xl object-cover"
                   src="./public/img/card-content/imgWide2.png"
-                  alt=""
+                  alt="Card content image"
                 />
               </figure>
             </div>
@@ -1257,11 +1284,11 @@
                     </div>
 
                     <div class="rating flex flex-row gap-2">
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
                     </div>
                   </div>
                 </div>
@@ -1297,11 +1324,11 @@
                     </div>
 
                     <div class="rating flex flex-row gap-2">
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
                     </div>
                   </div>
                 </div>
@@ -1337,11 +1364,11 @@
                     </div>
 
                     <div class="rating flex flex-row gap-2">
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
                     </div>
                   </div>
                 </div>
@@ -1377,11 +1404,11 @@
                     </div>
 
                     <div class="rating flex flex-row gap-2">
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
-                      <i><img src="./svg/icon_star.svg" alt="" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
+                      <i><img src="./svg/icon_star.svg" alt="Star icon" /></i>
                     </div>
                   </div>
                 </div>
@@ -1518,7 +1545,7 @@
             <div
               class="main__logo__footer flex flex-row items-center gap-2 logo_burumah"
             >
-              <img class="w-20" src="/svg/burumah_logo.svg" alt="" />
+              <img class="w-20" src="/svg/burumah_logo.svg" alt="Main logo" />
               <span class="font-bold text-4xl">Burumah</span>
             </div>
             <p class="description__footer">
