@@ -1,11 +1,13 @@
+import jump from "jump.js";
+
+// jump(".target");
+
 let navigation = document.getElementById("nav");
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
-    navigation.classList.add("shadow-lg");
     navigation.classList.add("bg-white");
   } else {
-    navigation.classList.remove("shadow-lg");
     navigation.classList.remove("bg-white");
   }
 });

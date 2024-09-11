@@ -19,69 +19,72 @@
   <body>
     <main id="app">
       <!-- ________HEADER__________ -->
-      <!-- ________Navigation________ -->
-      <nav
-        id="nav"
-        class="header__navigation w-full p-10 2xl:left-0 flex flex-row items-center justify-between py-3 z-50 sticky top-0"
-      >
-        <a class="main__logo" href="">
-          <div class="flex flex-row gap-2 items-center">
-            <img src="/svg/burumah_logo.svg" alt="" />
-            <span class="font-bold">Burumah</span>
-          </div>
-        </a>
-        <ul
-          id="navActive"
-          class="navigation__list sm:hidden md:flex 2xl:flex flex-row gap border border__primary rounded-full p-2 bg-white"
-        >
-          <li
-            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5 active"
-          >
-            Home
-          </li>
-          <li
-            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
-          >
-            About Us
-          </li>
-          <li
-            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
-          >
-            Property
-          </li>
-          <li
-            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
-          >
-            Our Blog
-          </li>
-          <li
-            class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
-          >
-            FAQ
-          </li>
-        </ul>
-        <a href="">
-          <div class="button__registration group/registration flex flex-row">
-            <button class="button__wide bg__secondary rounded-full py-3 px-5">
-              Registration Now
-            </button>
-            <button
-              class="border border__secondary group-hover/registration:rotate-90 duration-200 flex place-content-center items-center btn__arrow rounded-full bg-white"
-            >
-              <img
-                class="w-3 h-3 group-hover/registration:w-5 group-hover/registration:h-5 duration-200"
-                src="./svg/arrow-up-right.svg"
-                alt="Arrow Up Right"
-              />
-            </button>
-          </div>
-        </a>
-      </nav>
-      <!-- ________Navigation END________ -->
+
       <header
         class="hero__section 2xl:container sm:container md:container pb-8 bg-heroBackground bg-cover"
       >
-        <section class="mt-[115px] body">
+        <!-- ________Navigation________ -->
+        <nav
+          id="nav"
+          class="header__navigation container w-full left-0 flex flex-row items-center justify-between py-3 z-50 fixed top-0"
+        >
+          <a class="main__logo" href="">
+            <div class="flex flex-row gap-2 items-center">
+              <img src="/svg/burumah_logo.svg" alt="" />
+              <span class="font-bold">Burumah</span>
+            </div>
+          </a>
+          <ul
+            id="navActive"
+            class="navigation__list sm:hidden md:flex 2xl:flex flex-row gap border border__primary rounded-full p-2 bg-white"
+          >
+            <li
+              class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5 active"
+            >
+              <a href="#hero">Home</a>
+            </li>
+            <li
+              class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+            >
+              <a href="#aboutUs">About Us</a>
+            </li>
+            <li
+              class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+            >
+              <a href="#latesProperty">Property</a>
+            </li>
+            <li
+              class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+            >
+              Our Blog
+            </li>
+            <li
+              class="navigation__items text-base hover:cursor-pointer duration-200 rounded-full py-2 px-5"
+            >
+              FAQ
+            </li>
+          </ul>
+          <a href="">
+            <div
+              class="button__registration group/registration flex flex-row items-center"
+            >
+              <button class="button__wide bg__secondary rounded-full">
+                Registration Now
+              </button>
+              <button
+                class="border border__secondary group-hover/registration:rotate-45 duration-200 flex place-content-center items-center btn__arrow rounded-full bg-white"
+              >
+                <img
+                  class="w-3 h-3 group-hover/registration:w-5 group-hover/registration:h-5 duration-200"
+                  src="./svg/arrow-up-right.svg"
+                  alt="Arrow Up Right"
+                />
+              </button>
+            </div>
+          </a>
+        </nav>
+        <!-- ________Navigation END________ -->
+        <section id="hero" class="mt-[115px] body relative">
           <div
             class="aside__caption__hero flex 2xl:flex-row md:flex-row sm:flex-col sm:text-center sm:gap-12 left-32 w-full 2xl:gap-12 md:gap-12"
           >
@@ -141,7 +144,7 @@
                   data-aos="fade-up"
                   data-aos-delay="200"
                   data-aos-offset="200"
-                  class="get-started__button group/wideButton flex flex-row relative"
+                  class="get-started__button group/wideButton flex flex-row relative items-center"
                 >
                   <button
                     aria-label="Button For Access Registration Page"
@@ -151,7 +154,7 @@
                   </button>
 
                   <button
-                    class="arrow__wide group-hover/wideButton:rotate-90 bg__secondary duration-200 z-10 rounded-full flex place-content-center items-center btn__arrow"
+                    class="arrow__wide group-hover/wideButton:rotate-45 bg__secondary duration-200 z-10 rounded-full flex place-content-center items-center btn__arrow"
                   >
                     <img
                       class="w-3 h-3 group-hover/wideButton:w-5 group-hover/wideButton:h-5"
@@ -189,7 +192,7 @@
 
           <aside
             data-aos="fade-left"
-            class="aside__socmed__hero sm:hidden md:block 2xl:block flex p-5 absolute w-auto md:top-32 2xl:top-32 right-0 flex-col space-y-4"
+            class="aside__socmed__hero container sm:hidden md:block 2xl:block flex p-5 absolute w-auto md:top-32 2xl:top-32 right-0 flex-col space-y-4"
           >
             <a
               class="socmed__item group h-14 w-14 border border-black rounded-full flex items-center justify-center"
@@ -320,7 +323,11 @@
       <!-- ________SLIDER END__________ -->
 
       <!-- ________ABOUT US__________ -->
-      <section data-aos="fade-up" class="section__about container pt-32 body">
+      <section
+        id="aboutUs"
+        data-aos="fade-up"
+        class="section__about container pt-32 body"
+      >
         <article>
           <h3
             class="title__section__about-us sm:text-center md:text-start font-medium"
@@ -393,7 +400,7 @@
       <!-- ________ABOUT US END__________ -->
 
       <!-- ________OUR TEAM SECTION__________ -->
-      <section data-aos="fade-up" class="section__our-team body-2">
+      <section id="ourTeam" data-aos="fade-up" class="section__our-team body-2">
         <article>
           <div class="container pt-32">
             <div
@@ -468,21 +475,21 @@
                     </figure>
                     <div class="flex flex-col gap-1">
                       <b class="profile__name text-xl"> Purwa Adi </b>
-                      <p class="profile__position">Designer Property</p>
+                      <p class="profile__position">Des igner Property</p>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="flex flex-row hover:scale-105 duration-200 group/registration__our-team w-full"
+                  class="flex flex-row hover:scale-105 duration-200 group/registration__our-team w-full items-center"
                 >
                   <button
-                    class="button__registration bg__secondary rounded-full sm:w-96 sm:h-14 md:w-60 sm:text-2xl hover:font-bold duration-200"
+                    class="button__wide bg__secondary rounded-full sm:w-96 md:w-60 sm:text-2xl hover:font-bold duration-200"
                     aria-label="Button For Access Registration Page"
                   >
                     Registration Now
                   </button>
                   <button
-                    class="button-arrow__registration group-hover/registration__our-team:rotate-90 duration-200 border border__secondary flex place-content-center items-center btn__arrow rounded-full"
+                    class="button-arrow__registration group-hover/registration__our-team:rotate-45 duration-200 border border__secondary flex place-content-center items-center btn__arrow rounded-full"
                   >
                     <img
                       class="w-3 h-3 group-hover/registration__our-team:w-5 group-hover/registration__our-team:h-5"
@@ -500,6 +507,7 @@
 
       <!-- ________LATES PROPERTY__________ -->
       <section
+        id="latesProperty"
         data-aos="fade-up"
         class="section__lates-property container pt-32 flex flex-col gap-10 white"
       >
@@ -527,7 +535,7 @@
                   class="button__prev flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:w-16 sm:h-12 sm:p-3 md:w-24 md:h-14"
                 >
                   <svg
-                    class="group-hover:fill-white"
+                    class="group-hover:fill-white scale-50"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
@@ -548,7 +556,7 @@
                   class="button__next flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:w-16 sm:h-12 sm:p-3 md:w-24 md:h-14"
                 >
                   <svg
-                    class="group-hover:fill-white"
+                    class="group-hover:fill-white scale-50"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
@@ -569,27 +577,29 @@
 
         <swiper-container class="swiper-container" slides-per-view="3">
           <swiper-slide
-            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+            class="swiper-slide group duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
           >
-            <div
-              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/img1.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/img1.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 class="card__title"><b>Sekarwangi Village</b></h4>
                 <p class="card__address">
                   2972 Westheimer Rd. Santa Ana, Illinois 85486
@@ -603,27 +613,29 @@
           </swiper-slide>
 
           <swiper-slide
-            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+            class="swiper-slide group duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
           >
-            <div
-              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/img2.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/img2.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 class="card__title"><b>Leuwigoong house sevilage</b></h4>
                 <p class="card__address">
                   2118 Thornridge Cir. Syracuse, Connecticut 35624
@@ -637,27 +649,29 @@
           </swiper-slide>
 
           <swiper-slide
-            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+            class="swiper-slide group duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
           >
-            <div
-              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/img3.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/img3.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 class="card__title"><b>Leuwipeti village</b></h4>
                 <p class="card__address">
                   3517 W. Gray St. Utica, Pennsylvania 57867
@@ -671,27 +685,29 @@
           </swiper-slide>
 
           <swiper-slide
-            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+            class="swiper-slide group duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
           >
-            <div
-              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/img1.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/img1.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 class="card__title"><b>Sekarwangi Village</b></h4>
                 <p class="card__address">
                   2972 Westheimer Rd. Santa Ana, Illinois 85486
@@ -705,27 +721,29 @@
           </swiper-slide>
 
           <swiper-slide
-            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+            class="swiper-slide group duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
           >
-            <div
-              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/img1.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/img1.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 class="card__title"><b>Sekarwangi Village</b></h4>
                 <p class="card__address">
                   2972 Westheimer Rd. Santa Ana, Illinois 85486
@@ -739,27 +757,29 @@
           </swiper-slide>
 
           <swiper-slide
-            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+            class="swiper-slide group duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
           >
-            <div
-              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/img2.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/img2.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 class="card__title"><b>Leuwigoong house sevilage</b></h4>
                 <p class="card__address">
                   2118 Thornridge Cir. Syracuse, Connecticut 35624
@@ -773,27 +793,29 @@
           </swiper-slide>
 
           <swiper-slide
-            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+            class="swiper-slide group duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
           >
-            <div
-              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/img3.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/img3.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 class="card__title"><b>Leuwipeti village</b></h4>
                 <p class="card__address">
                   3517 W. Gray St. Utica, Pennsylvania 57867
@@ -807,27 +829,29 @@
           </swiper-slide>
 
           <swiper-slide
-            class="swiper-slide group hover:scale-100 duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
+            class="swiper-slide group duration-200 flex flex-col 2xl:w-1/3 md:w-1/3 relative"
           >
-            <div
-              class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side absolute -right-[1px] -top-[1px] flex items-center justify-center z-10"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/img1.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/img1.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 class="card__title"><b>Sekarwangi Village</b></h4>
                 <p class="card__address">
                   2972 Westheimer Rd. Santa Ana, Illinois 85486
@@ -846,6 +870,7 @@
 
       <!-- ________PROPERTY CATEGORY__________ -->
       <section
+        id="propertyCategory"
         data-aos="fade-up"
         x-data="{
           activeCategory: 'House',
@@ -932,25 +957,27 @@
             class="card__property-category group w-full col-span-2 relative"
             x-show="isMatchingCategory($el.querySelector('.card__title').innerText)"
           >
-            <div
-              class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/imgWide1.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/imgWide1.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 id="card-title" class="card__title">
                   <b>Babakansirna House</b>
                 </h4>
@@ -969,25 +996,27 @@
             class="card__property-category group w-full relative"
             x-show="isMatchingCategory($el.querySelector('.card__title').innerText)"
           >
-            <div
-              class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/imgSquare1.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/imgSquare1.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 id="card-title" class="card__title">
                   <b>Pelangi House</b>
                 </h4>
@@ -1006,25 +1035,27 @@
             class="card__property-category group w-full relative"
             x-show="isMatchingCategory($el.querySelector('.card__title').innerText)"
           >
-            <div
-              class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/imgSquare2.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/imgSquare2.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 id="card-title" class="card__title"><b>Real Estate</b></h4>
                 <p class="card__address">
                   2972 Westheimer Rd. Santa Ana, Illinois 85486
@@ -1041,25 +1072,27 @@
             class="card__property-category group w-full col-span-2 relative"
             x-show="isMatchingCategory($el.querySelector('.card__title').innerText)"
           >
-            <div
-              class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
-            >
-              <button
-                class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-180 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+            <div class="scale-95 hover:scale-100 duration-200">
+              <div
+                class="card__corner bg-white card__corner__side z-10 absolute -right-[1px] -top-[1px] flex items-center justify-center"
               >
-                <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
-              </button>
+                <button
+                  class="button-arrow__card__lates-property transform transition-transform duration-200 group-hover:rotate-45 group-hover:scale-125 absolute p-3 z-20 bg__secondary rounded-full flex justify-center items-center"
+                >
+                  <img src="./svg/arrow-up-right.svg" alt="Arrow Up Right" />
+                </button>
+              </div>
+              <figure class="card__lates-property relative">
+                <img
+                  class="card__bg bg-img1 rounded-3xl object-cover"
+                  src="./public/img/card-content/imgWide2.png"
+                  alt=""
+                />
+              </figure>
             </div>
-            <figure class="card__lates-property relative">
-              <img
-                class="card__bg bg-img1 rounded-3xl object-cover"
-                src="./public/img/card-content/imgWide2.png"
-                alt=""
-              />
-            </figure>
 
             <div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 mt-6">
                 <h4 id="card-title" class="card__title">
                   <b>Property House</b>
                 </h4>
@@ -1079,6 +1112,7 @@
 
       <!-- ________TESTIMONIAL__________ -->
       <section
+        id="testimonial"
         data-aos="fade-up"
         class="section__testimonial 2xl:container sm:container md:container pt-32 flex flex-col gap-10"
       >
@@ -1291,7 +1325,7 @@
                       class="button-prev__testimonial flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:w-16 sm:h-12 sm:p-3 md:w-24 md:h-14"
                     >
                       <svg
-                        class="group-hover:fill-white"
+                        class="group-hover:fill-white scale-50"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
@@ -1313,7 +1347,7 @@
                       class="button-next__testimonial flex items-center justify-center border rounded-full 2xl:w-24 2xl:h-14 sm:w-16 sm:h-12 sm:p-3 md:w-24 md:h-14"
                     >
                       <svg
-                        class="group-hover:fill-white"
+                        class="group-hover:fill-white scale-50"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
@@ -1393,6 +1427,7 @@
 
       <!-- ________FOOTER__________ -->
       <footer
+        id="footer"
         data-aos="fade-up"
         class="section__footer container py-20 bg-heroBackground bg-cover"
       >
@@ -1446,7 +1481,9 @@
             </div>
           </div>
 
-          <div class="md:w-1/3 2xl:w-1/3 flex flex-col gap-12 sm:text-center">
+          <div
+            class="md:w-1/3 2xl:w-1/3 flex flex-col gap-12 sm:text-center md:text-start"
+          >
             <h4 class="title__subscribe sm:text-2xl">
               <b>Subscribe to Follow</b>
             </h4>
@@ -1466,7 +1503,7 @@
               </button>
             </div>
             <div
-              class="socmed__footer flex flex-row sm:items-center sm:justify-around"
+              class="socmed__footer flex flex-row sm:items-center sm:justify-between"
             >
               <a
                 class="items__socmed__footer group hover:bg-black h-14 w-14 border border-black rounded-full flex items-center justify-center"
